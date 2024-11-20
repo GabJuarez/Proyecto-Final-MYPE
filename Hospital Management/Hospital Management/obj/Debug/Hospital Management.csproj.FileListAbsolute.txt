@@ -1,0 +1,10 @@
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\bin\Debug\Hospital Management.exe.config
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\bin\Debug\Hospital Management.exe
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\bin\Debug\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.AssemblyReference.cache
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Properties.Resources.resources
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.GenerateResource.cache
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.CoreCompileInputs.cache
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.exe
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Login.resources
