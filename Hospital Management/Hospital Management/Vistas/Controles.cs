@@ -30,25 +30,29 @@ namespace Hospital_Management.Vistas
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Registro registro = new Registro();
+            RegistroForm registro = new RegistroForm();
+            registro.Show();
         }
 
         private void btnAgregarDiagnostico_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Diagnostico diagnostico = new Diagnostico();
+            DiagnosticoForm diagnostico = new DiagnosticoForm();
+            diagnostico.Show();
         }
 
         private void btnHistorial_Click(object sender, EventArgs e)
         {
             this.Hide();
             Historial historial = new Historial();
+            historial.Show();
         }
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
             this.Hide();
             Estadisticas estadisticas = new Estadisticas();
+            estadisticas.Show();
         }
     }
 }

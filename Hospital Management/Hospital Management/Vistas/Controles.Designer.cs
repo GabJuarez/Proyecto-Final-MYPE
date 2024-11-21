@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 38);
+            this.label1.Location = new System.Drawing.Point(133, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 32);
             this.label1.TabIndex = 0;
@@ -73,9 +73,9 @@
             this.btnAgregarRegistro.BackColor = System.Drawing.Color.LightBlue;
             this.btnAgregarRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarRegistro.Location = new System.Drawing.Point(78, 89);
+            this.btnAgregarRegistro.Location = new System.Drawing.Point(78, 74);
             this.btnAgregarRegistro.Name = "btnAgregarRegistro";
-            this.btnAgregarRegistro.Size = new System.Drawing.Size(283, 23);
+            this.btnAgregarRegistro.Size = new System.Drawing.Size(283, 38);
             this.btnAgregarRegistro.TabIndex = 2;
             this.btnAgregarRegistro.Text = "Agregar Nuevo Registro de Paciente";
             this.btnAgregarRegistro.UseVisualStyleBackColor = false;
@@ -86,9 +86,9 @@
             this.btnAgregarDiagnostico.BackColor = System.Drawing.Color.LightBlue;
             this.btnAgregarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregarDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarDiagnostico.Location = new System.Drawing.Point(78, 133);
+            this.btnAgregarDiagnostico.Location = new System.Drawing.Point(78, 128);
             this.btnAgregarDiagnostico.Name = "btnAgregarDiagnostico";
-            this.btnAgregarDiagnostico.Size = new System.Drawing.Size(283, 23);
+            this.btnAgregarDiagnostico.Size = new System.Drawing.Size(283, 37);
             this.btnAgregarDiagnostico.TabIndex = 3;
             this.btnAgregarDiagnostico.Text = "Agregar Información de Diagnóstico";
             this.btnAgregarDiagnostico.UseVisualStyleBackColor = false;
@@ -99,9 +99,9 @@
             this.btnHistorial.BackColor = System.Drawing.Color.LightBlue;
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.Location = new System.Drawing.Point(78, 176);
+            this.btnHistorial.Location = new System.Drawing.Point(78, 179);
             this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(283, 23);
+            this.btnHistorial.Size = new System.Drawing.Size(283, 39);
             this.btnHistorial.TabIndex = 4;
             this.btnHistorial.Text = "Historial Completo del Paciente";
             this.btnHistorial.UseVisualStyleBackColor = false;
@@ -112,9 +112,9 @@
             this.btnEstadisticas.BackColor = System.Drawing.Color.LightBlue;
             this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEstadisticas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstadisticas.Location = new System.Drawing.Point(78, 221);
+            this.btnEstadisticas.Location = new System.Drawing.Point(78, 234);
             this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.Size = new System.Drawing.Size(283, 23);
+            this.btnEstadisticas.Size = new System.Drawing.Size(283, 38);
             this.btnEstadisticas.TabIndex = 5;
             this.btnEstadisticas.Text = "Estadísticas";
             this.btnEstadisticas.UseVisualStyleBackColor = false;
@@ -124,7 +124,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.IndianRed;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Location = new System.Drawing.Point(184, 272);
+            this.btnSalir.Location = new System.Drawing.Point(185, 288);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 6;
@@ -155,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(39, 79);
+            this.label3.Location = new System.Drawing.Point(39, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 36);
             this.label3.TabIndex = 9;
@@ -166,7 +166,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 123);
+            this.label4.Location = new System.Drawing.Point(39, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 36);
             this.label4.TabIndex = 10;
@@ -177,7 +177,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 166);
+            this.label5.Location = new System.Drawing.Point(39, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 36);
             this.label5.TabIndex = 11;
@@ -188,7 +188,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(39, 211);
+            this.label6.Location = new System.Drawing.Point(39, 233);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 36);
             this.label6.TabIndex = 12;
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1138, 497);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -218,7 +218,6 @@
             this.Name = "Controles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

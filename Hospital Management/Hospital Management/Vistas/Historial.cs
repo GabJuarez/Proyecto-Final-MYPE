@@ -16,5 +16,12 @@ namespace Hospital_Management.Vistas
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Controles controles = new Controles();
+            controles.Show();
+        }
     }
 }

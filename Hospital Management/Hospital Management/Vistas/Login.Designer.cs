@@ -48,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(343, 37);
+            this.label1.Location = new System.Drawing.Point(491, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 36);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(465, 118);
+            this.label2.Location = new System.Drawing.Point(613, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 22);
             this.label2.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(452, 212);
+            this.label3.Location = new System.Drawing.Point(600, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 22);
             this.label3.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(45, 262);
+            this.label4.Location = new System.Drawing.Point(82, 341);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 29);
             this.label4.TabIndex = 3;
@@ -96,7 +96,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(62, 291);
+            this.label5.Location = new System.Drawing.Point(99, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 29);
             this.label5.TabIndex = 4;
@@ -109,7 +109,7 @@
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAcceder.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.ForeColor = System.Drawing.Color.White;
-            this.btnAcceder.Location = new System.Drawing.Point(456, 337);
+            this.btnAcceder.Location = new System.Drawing.Point(604, 410);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(100, 32);
             this.btnAcceder.TabIndex = 5;
@@ -126,14 +126,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 450);
+            this.panel1.Size = new System.Drawing.Size(322, 596);
             this.panel1.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.Image = global::Hospital_Management.Properties.Resources.hospital;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(95, 176);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +144,7 @@
             // 
             this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUser.Location = new System.Drawing.Point(456, 156);
+            this.txtUser.Location = new System.Drawing.Point(604, 229);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 22);
             this.txtUser.TabIndex = 7;
@@ -153,7 +153,7 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Location = new System.Drawing.Point(456, 246);
+            this.txtPassword.Location = new System.Drawing.Point(604, 319);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1097, 596);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.panel1);
