@@ -16,5 +16,9 @@ namespace Hospital_Management.Vistas
         {
             InitializeComponent();
         }
+
+        private void Estadisticas_Load(object sender, EventArgs e) { }
+
+        
     }
 }
