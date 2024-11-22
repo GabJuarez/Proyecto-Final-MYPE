@@ -19,6 +19,12 @@ namespace Hospital_Management.Vistas
 
         private void Estadisticas_Load(object sender, EventArgs e) { }
 
-        
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Controles controles = new Controles();
+            controles.Show();
+
+        }
     }
 }
