@@ -52,11 +52,11 @@
     <Compile Include="Vistas\Controles.Designer.cs">
       <DependentUpon>Controles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\DiagnosticoForm.cs">
+    <Compile Include="Vistas\EditarRegistroForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\DiagnosticoForm.Designer.cs">
-      <DependentUpon>DiagnosticoForm.cs</DependentUpon>
+    <Compile Include="Vistas\EditarRegistroForm.Designer.cs">
+      <DependentUpon>EditarRegistroForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Estadisticas.cs">
       <SubType>Form</SubType>
@@ -76,7 +76,6 @@
     <Compile Include="Vistas\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelo de datos\InformacionAdicional.cs" />
     <Compile Include="Modelo de datos\Registro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,8 +98,8 @@
     <EmbeddedResource Include="Vistas\Controles.resx">
       <DependentUpon>Controles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\DiagnosticoForm.resx">
-      <DependentUpon>DiagnosticoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\EditarRegistroForm.resx">
+      <DependentUpon>EditarRegistroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Estadisticas.resx">
       <DependentUpon>Estadisticas.cs</DependentUpon>

@@ -34,12 +34,7 @@ namespace Hospital_Management.Vistas
             registro.Show();
         }
 
-        private void btnAgregarDiagnostico_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DiagnosticoForm diagnostico = new DiagnosticoForm();
-            diagnostico.Show();
-        }
+        
 
         private void btnHistorial_Click(object sender, EventArgs e)
         {

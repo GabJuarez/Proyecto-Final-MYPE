@@ -22,4 +22,4 @@ C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital M
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.CoreCompileInputs.cache
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.pdb
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.DiagnosticoForm.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.EditarRegistroForm.resources

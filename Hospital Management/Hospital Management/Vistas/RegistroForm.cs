@@ -5,10 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hospital_Management.Modelo_de_datos;
+using Hospital_Management.Vistas;
 
 namespace Hospital_Management.Vistas
 {
@@ -20,6 +22,7 @@ namespace Hospital_Management.Vistas
         }
 
         private List<Registro> listaRegistros = new List<Registro>();
+        private void label10_Click(object sender, EventArgs e) { }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
@@ -28,8 +31,8 @@ namespace Hospital_Management.Vistas
             controles.Show();
         }
 
-        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e) { }  
-        
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e) { }
+
         private void txtNombresYApellidos_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)Keys.Back)
@@ -94,7 +97,12 @@ namespace Hospital_Management.Vistas
                 !string.IsNullOrEmpty(txtEnfermedadAnterior.Text) &&
                 !string.IsNullOrEmpty(txtIdPaciente.Text) &&
                 (cmbGenero.SelectedIndex != -1) &&
-                (cmbTipoSangre.SelectedIndex != -1))
+                (cmbTipoSangre.SelectedIndex != -1) &&
+                !string.IsNullOrEmpty(txtSintomas.Text) &&
+                !string.IsNullOrEmpty(txtDiagnostico.Text) &&
+                !string.IsNullOrEmpty(txtMedicamentos.Text) &&
+                (cmbRequerimientoDeSala.SelectedIndex != -1) &&
+                (cmbTipoDeSala.SelectedIndex != -1))
 
             { btnGuardar.Enabled = true; }
         }
@@ -138,6 +146,30 @@ namespace Hospital_Management.Vistas
         {
             Validar();
         }
+        private void txtSintomas_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void txtDiagnostico_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void txtMedicamentos_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void cmbRequerimientoDeSala_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void cmbTipoDeSala_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
 
         private void Limpiar()
         {
@@ -149,6 +181,11 @@ namespace Hospital_Management.Vistas
             txtIdPaciente.Clear();
             cmbGenero.SelectedIndex = -1;
             cmbTipoSangre.SelectedIndex = -1;
+            txtSintomas.Clear();
+            txtDiagnostico.Clear();
+            txtMedicamentos.Clear();
+            cmbRequerimientoDeSala.SelectedIndex = -1;
+            cmbTipoDeSala.SelectedIndex = -1;
             txtNombresYApellidos.Focus();
         }
 
@@ -172,6 +209,13 @@ namespace Hospital_Management.Vistas
             try
             {
                 string id = txtIdPaciente.Text;
+
+                if (EsIdRepetido(id))
+                {
+                    MessageBox.Show($"El ID '{id}' ya existe. Por favor, ingresa un ID único.", "ID Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 string nombre = txtNombresYApellidos.Text;
                 string direccion = txtDireccion.Text;
                 string contacto = txtNumeroContacto.Text;
@@ -179,33 +223,37 @@ namespace Hospital_Management.Vistas
                 string genero = cmbGenero.SelectedItem.ToString();
                 string tipoSangre = cmbTipoSangre.SelectedItem.ToString();
                 string enfermedadAnterior = txtEnfermedadAnterior.Text;
+                string sintomas = txtSintomas.Text;
+                string diagnostico = txtDiagnostico.Text;
+                string medicamentos = txtMedicamentos.Text;
+                string requerimientoSala = cmbRequerimientoDeSala.SelectedItem.ToString();
+                string tipoSala = cmbTipoDeSala.SelectedItem.ToString();
 
-                Registro registro = new Registro(id, nombre, direccion, contacto, edad, genero, tipoSangre, enfermedadAnterior);
+                Registro nuevoRegistro = new Registro(id, nombre, direccion, contacto, edad, genero, tipoSangre,
+                    enfermedadAnterior, sintomas, diagnostico, medicamentos, requerimientoSala, tipoSala);
 
-                listaRegistros.Add(registro);
-
-                fs = new FileStream("registros.bin", FileMode.Create);
+                fs = new FileStream("registros.bin", FileMode.Append);
                 writer = new BinaryWriter(fs);
 
-                writer.Write(listaRegistros.Count);
+                writer.Write(nuevoRegistro.Id);
+                writer.Write(nuevoRegistro.Nombre);
+                writer.Write(nuevoRegistro.Direccion);
+                writer.Write(nuevoRegistro.Ncontacto);
+                writer.Write(nuevoRegistro.Edad);
+                writer.Write(nuevoRegistro.Genero);
+                writer.Write(nuevoRegistro.Tiposangre);
+                writer.Write(nuevoRegistro.Enfermedadanterior);
+                writer.Write(nuevoRegistro.Sintomas);
+                writer.Write(nuevoRegistro.Diagnostico);
+                writer.Write(nuevoRegistro.Medicamentos);
+                writer.Write(nuevoRegistro.RequerimientoDeSala);
+                writer.Write(nuevoRegistro.TipoDeSala);
 
-                foreach (var reg in listaRegistros)
-                {
-                    writer.Write(reg.Id);
-                    writer.Write(reg.Nombre);
-                    writer.Write(reg.Direccion);
-                    writer.Write(reg.Ncontacto);
-                    writer.Write(reg.Edad);
-                    writer.Write(reg.Genero);
-                    writer.Write(reg.Tiposangre);
-                    writer.Write(reg.Enfermedadanterior);
-                }
-
-                MessageBox.Show("Registro agregado correctamente y guardado en el archivo!", "Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Registro guardado correctamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ha ocurrido un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al guardar el registro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -213,6 +261,53 @@ namespace Hospital_Management.Vistas
                 if (fs != null) fs.Close();
             }
         }
+        private bool EsIdRepetido(string id)
+        {
+            FileStream fs = null;
+            BinaryReader reader = null;
+
+            try
+            {
+                if (!File.Exists("registros.bin"))
+                    return false;
+
+                fs = new FileStream("registros.bin", FileMode.Open);
+                reader = new BinaryReader(fs);
+
+                while (fs.Position < fs.Length)
+                {
+                    string idExistente = reader.ReadString();
+
+                    reader.ReadString();
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString();
+                    reader.ReadString();
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+                    reader.ReadString(); 
+
+                    if (idExistente == id)
+                        return true; 
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al verificar IDs: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (reader != null) reader.Close();
+                if (fs != null) fs.Close();
+            }
+
+            return false; 
+        }
+
 
     }
 }
