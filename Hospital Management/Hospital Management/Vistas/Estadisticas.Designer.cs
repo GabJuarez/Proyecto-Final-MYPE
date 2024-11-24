@@ -54,9 +54,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(521, 9);
+            this.label1.Location = new System.Drawing.Point(391, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 37);
+            this.label1.Size = new System.Drawing.Size(154, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estadísticas";
             // 
@@ -64,9 +65,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(523, 421);
+            this.label2.Location = new System.Drawing.Point(392, 342);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 25);
+            this.label2.Size = new System.Drawing.Size(143, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tipos de Sangre";
             // 
@@ -74,9 +76,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(787, 82);
+            this.label3.Location = new System.Drawing.Point(590, 67);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(301, 25);
+            this.label3.Size = new System.Drawing.Size(248, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Pacientes que Necesitan Sala";
             // 
@@ -84,9 +87,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 82);
+            this.label4.Location = new System.Drawing.Point(62, 67);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(385, 25);
+            this.label4.Size = new System.Drawing.Size(316, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Distribución de Pacientes por Género";
             // 
@@ -96,13 +100,16 @@
             this.chrtTiposDeSangre.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chrtTiposDeSangre.Legends.Add(legend1);
-            this.chrtTiposDeSangre.Location = new System.Drawing.Point(373, 460);
+            this.chrtTiposDeSangre.Location = new System.Drawing.Point(280, 374);
+            this.chrtTiposDeSangre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chrtTiposDeSangre.Name = "chrtTiposDeSangre";
+            this.chrtTiposDeSangre.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chrtTiposDeSangre.Series.Add(series1);
-            this.chrtTiposDeSangre.Size = new System.Drawing.Size(501, 254);
+            this.chrtTiposDeSangre.Size = new System.Drawing.Size(376, 206);
             this.chrtTiposDeSangre.TabIndex = 4;
             this.chrtTiposDeSangre.Text = "chart1";
             // 
@@ -112,13 +119,15 @@
             this.chrtPacientesPorGenero.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chrtPacientesPorGenero.Legends.Add(legend2);
-            this.chrtPacientesPorGenero.Location = new System.Drawing.Point(24, 124);
+            this.chrtPacientesPorGenero.Location = new System.Drawing.Point(18, 101);
+            this.chrtPacientesPorGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chrtPacientesPorGenero.Name = "chrtPacientesPorGenero";
+            this.chrtPacientesPorGenero.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chrtPacientesPorGenero.Series.Add(series2);
-            this.chrtPacientesPorGenero.Size = new System.Drawing.Size(501, 254);
+            this.chrtPacientesPorGenero.Size = new System.Drawing.Size(376, 206);
             this.chrtPacientesPorGenero.TabIndex = 5;
             this.chrtPacientesPorGenero.Text = "chart2";
             // 
@@ -128,13 +137,15 @@
             this.chrtPacientesQueNecesitanSala.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chrtPacientesQueNecesitanSala.Legends.Add(legend3);
-            this.chrtPacientesQueNecesitanSala.Location = new System.Drawing.Point(686, 124);
+            this.chrtPacientesQueNecesitanSala.Location = new System.Drawing.Point(514, 101);
+            this.chrtPacientesQueNecesitanSala.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chrtPacientesQueNecesitanSala.Name = "chrtPacientesQueNecesitanSala";
+            this.chrtPacientesQueNecesitanSala.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chrtPacientesQueNecesitanSala.Series.Add(series3);
-            this.chrtPacientesQueNecesitanSala.Size = new System.Drawing.Size(501, 254);
+            this.chrtPacientesQueNecesitanSala.Size = new System.Drawing.Size(376, 206);
             this.chrtPacientesQueNecesitanSala.TabIndex = 6;
             this.chrtPacientesQueNecesitanSala.Text = "chart3";
             // 
@@ -143,9 +154,10 @@
             this.btnVolver.BackColor = System.Drawing.Color.IndianRed;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(1083, 676);
+            this.btnVolver.Location = new System.Drawing.Point(812, 549);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(89, 38);
+            this.btnVolver.Size = new System.Drawing.Size(67, 31);
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -153,10 +165,10 @@
             // 
             // Estadisticas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1237, 737);
+            this.ClientSize = new System.Drawing.Size(928, 599);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.chrtPacientesQueNecesitanSala);
             this.Controls.Add(this.chrtPacientesPorGenero);
@@ -165,6 +177,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Estadisticas";
             this.Text = "Estadisticas";
             this.Load += new System.EventHandler(this.Estadisticas_Load);
