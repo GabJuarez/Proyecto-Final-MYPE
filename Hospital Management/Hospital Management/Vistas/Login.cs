@@ -30,6 +30,12 @@ namespace Hospital_Management
                 Controles menu = new Controles();
                 menu.Show(); 
             }
+            else if (user == "Juan" && pass == "putoy")
+            {
+                this.Hide();
+                OpPacientes op = new OpPacientes();
+                op.Show();
+            }
             else
             {
                 MessageBox.Show("Datos incorrectos!", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);

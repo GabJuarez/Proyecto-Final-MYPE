@@ -29,8 +29,8 @@ namespace Hospital_Management.Vistas
         private void BtnVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Control control = new Control();
-            control.Show();
+            Historial historial = new Historial();
+            historial.Show();
         }
 
         // metodo para cargar los datos del registro en el formulario
@@ -146,7 +146,6 @@ namespace Hospital_Management.Vistas
 
             try
             {
-                // Lee todos los registros existentes
                 if (File.Exists("registros.bin"))
                 {
                     using (fs = new FileStream("registros.bin", FileMode.Open))
@@ -177,7 +176,6 @@ namespace Hospital_Management.Vistas
                     }
                 }
 
-                // Encuentra y actualiza el registro existente
                 foreach (var reg in registros)
                 {
                     if (reg.Id == registroActual.Id)
@@ -198,7 +196,6 @@ namespace Hospital_Management.Vistas
                     }
                 }
 
-                // Escribe todos los registros de vuelta al archivo
                 using (fs = new FileStream("registros.bin", FileMode.Create))
                 using (writer = new BinaryWriter(fs))
                 {

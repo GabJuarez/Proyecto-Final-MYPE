@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(137, 27);
+            this.label1.Location = new System.Drawing.Point(156, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 32);
             this.label1.TabIndex = 0;
@@ -192,6 +192,7 @@
             this.btnGenerarReporte.TabIndex = 13;
             this.btnGenerarReporte.Text = "Generar Reporte";
             this.btnGenerarReporte.UseVisualStyleBackColor = false;
+            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click);
             // 
             // Controles
             // 

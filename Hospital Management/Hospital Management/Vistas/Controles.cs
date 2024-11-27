@@ -49,5 +49,11 @@ namespace Hospital_Management.Vistas
             Estadisticas estadisticas = new Estadisticas();
             estadisticas.Show();
         }
+
+        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        
+        }
     }
 }
