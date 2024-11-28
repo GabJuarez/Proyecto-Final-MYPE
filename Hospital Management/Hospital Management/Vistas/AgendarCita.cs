@@ -24,13 +24,13 @@ namespace Hospital_Management.Vistas
         {
             dgvCitas.MultiSelect = false;
             ConfigurarDataGridView();
-            CargarDatos();
+            CargarCitasDesdeArchivo();
             btnGuardar.Enabled = false;
             mtxtFecha.ValidatingType = typeof(System.DateTime);
 
         }
 
-        private List<Cita> citas = new List<Cita>();
+        public List<Cita> citas = new List<Cita>();
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -197,7 +197,6 @@ namespace Hospital_Management.Vistas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // Validar que los campos obligatorios no estén vacíos
             if (string.IsNullOrWhiteSpace(mtxtFecha.Text) ||
                 cmbHora.SelectedItem == null ||
                 cmbDoctor.SelectedItem == null ||
@@ -209,7 +208,6 @@ namespace Hospital_Management.Vistas
 
             try
             {
-                // Crear una nueva cita utilizando el constructor de la clase
                 Cita nuevaCita = new Cita(
                     fecha: DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null),
                     hora: cmbHora.SelectedItem.ToString(),
@@ -219,10 +217,8 @@ namespace Hospital_Management.Vistas
                     comentarios: rtxtComentarios.Text
                 );
 
-                // Agregar la nueva cita a la lista
-                citas.Add(nuevaCita);
+                ListaC.Citas.Add(nuevaCita);
 
-                // Agregar la nueva cita al DataGridView
                 dgvCitas.Rows.Add(
                     nuevaCita.Fecha.ToString("dd/MM/yyyy"),
                     nuevaCita.Hora,
@@ -232,13 +228,9 @@ namespace Hospital_Management.Vistas
                     nuevaCita.Comentarios
                 );
 
-                // Guardar la lista actualizada en el archivo binario
                 GuardarCitasEnArchivo();
 
-                // Mostrar mensaje de éxito
                 MessageBox.Show("Cita guardada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Limpiar los controles del formulario
                 Limpiar();
             }
             catch (FormatException)
@@ -251,7 +243,8 @@ namespace Hospital_Management.Vistas
             }
         }
 
-        private void ConfigurarDataGridView()
+
+        public void ConfigurarDataGridView()
         {
             dgvCitas.Columns.Clear();
             dgvCitas.Columns.Add("Fecha", "Fecha");
@@ -262,12 +255,14 @@ namespace Hospital_Management.Vistas
             dgvCitas.Columns.Add("Comentarios", "Comentarios");
         }
 
-        private void ActualizarDataGridView()
+        public void ActualizarDataGridView()
         {
-            foreach (var cita in citas)
+            dgvCitas.Rows.Clear();
+
+            foreach (var cita in ListaC.Citas)
             {
                 dgvCitas.Rows.Add(
-                    cita.Fecha.ToString("dd/MM/yyyy"), 
+                    cita.Fecha.ToString("dd/MM/yyyy"),
                     cita.Hora,
                     cita.Doctor,
                     cita.Consultorio,
@@ -275,29 +270,45 @@ namespace Hospital_Management.Vistas
                     cita.Comentarios
                 );
             }
-
         }
 
 
-        private void CargarDatos()
+
+
+        private void CargarCitasDesdeArchivo()
         {
             try
             {
-                if (File.Exists("citas.bin"))
+                if (File.Exists("citas.dat"))
                 {
-                    using (FileStream fs = new FileStream("citas.bin", FileMode.Open))
+                    using (FileStream fs = new FileStream("citas.dat", FileMode.Open))
                     {
                         BinaryFormatter formatter = new BinaryFormatter();
-                        citas = (List<Cita>)formatter.Deserialize(fs);
+                        ListaC.Citas = (List<Cita>)formatter.Deserialize(fs);
                     }
-                    ActualizarDataGridView();
+
+                    // Cargar las citas en el DataGridView
+                    foreach (var cita in ListaC.Citas)
+                    {
+                        dgvCitas.Rows.Add(
+                            cita.Fecha.ToString("dd/MM/yyyy"),
+                            cita.Hora,
+                            cita.Doctor,
+                            cita.Consultorio,
+                            cita.Motivo,
+                            cita.Comentarios
+                        );
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrió un error al cargar las citas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al cargar las citas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
@@ -314,7 +325,7 @@ namespace Hospital_Management.Vistas
                 int selectedIndex = dgvCitas.SelectedRows[0].Index;
 
                 // Actualizar la cita en la lista con los nuevos valores ingresados
-                Cita citaActualizada = citas[selectedIndex];
+                Cita citaActualizada = ListaC.Citas[selectedIndex];
                 citaActualizada.Fecha = DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null); // Actualiza la fecha
                 citaActualizada.Hora = cmbHora.SelectedItem.ToString();
                 if (cmbDoctor.SelectedItem != null)
@@ -363,9 +374,6 @@ namespace Hospital_Management.Vistas
                 MessageBox.Show($"Ocurrió un error al actualizar la cita: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-      
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dgvCitas.SelectedRows.Count == 0)
@@ -393,25 +401,26 @@ namespace Hospital_Management.Vistas
                 MessageBox.Show("Cita eliminada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void GuardarCitasEnArchivo()
         {
             try
             {
-                using (FileStream fs = new FileStream("citas.bin", FileMode.Create))
+                using (FileStream fs = new FileStream("citas.dat", FileMode.Create))
                 {
                     BinaryFormatter formatter = new BinaryFormatter();
-                    formatter.Serialize(fs, citas);
+                    formatter.Serialize(fs, ListaC.Citas);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrió un error al guardar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al guardar las citas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+
+
         private void dgvCitas_SelectionChanged_1(object sender, EventArgs e)
-        { // Verifica si hay filas seleccionadas en el DataGridView
+        { 
             if (dgvCitas.SelectedRows.Count > 0)
             {
                 // Obtiene la primera fila seleccionada
