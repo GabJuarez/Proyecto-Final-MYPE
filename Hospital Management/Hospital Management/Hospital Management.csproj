@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo de datos\Cita.cs" />
+    <Compile Include="Modelo de datos\ListaR.cs" />
     <Compile Include="Vistas\AgendarCita.cs">
       <SubType>Form</SubType>
     </Compile>

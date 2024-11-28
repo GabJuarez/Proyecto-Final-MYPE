@@ -117,6 +117,7 @@
             this.Controls.Add(this.dgvHistorial);
             this.Controls.Add(this.label1);
             this.Name = "Historial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial";
             this.Load += new System.EventHandler(this.Historial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
