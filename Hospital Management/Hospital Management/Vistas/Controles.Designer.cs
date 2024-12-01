@@ -39,8 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnGenerarReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -111,9 +109,9 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.IndianRed;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Location = new System.Drawing.Point(179, 324);
+            this.btnSalir.Location = new System.Drawing.Point(189, 262);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(93, 40);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -122,9 +120,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hospital_Management.Properties.Resources.hertz_2011_hp;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 372);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 351);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(393, 150);
+            this.pictureBox2.Size = new System.Drawing.Size(393, 171);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -171,37 +169,12 @@
             this.label6.Text = "»";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 242);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 36);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "»";
-            // 
-            // btnGenerarReporte
-            // 
-            this.btnGenerarReporte.BackColor = System.Drawing.Color.LightBlue;
-            this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerarReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarReporte.Location = new System.Drawing.Point(78, 240);
-            this.btnGenerarReporte.Name = "btnGenerarReporte";
-            this.btnGenerarReporte.Size = new System.Drawing.Size(307, 38);
-            this.btnGenerarReporte.TabIndex = 13;
-            this.btnGenerarReporte.Text = "Generar Reporte";
-            this.btnGenerarReporte.UseVisualStyleBackColor = false;
-            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click);
-            // 
             // Controles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1138, 534);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnGenerarReporte);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -237,7 +210,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnGenerarReporte;
     }
 }

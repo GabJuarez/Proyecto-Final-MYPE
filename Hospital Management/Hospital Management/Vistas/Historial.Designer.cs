@@ -33,6 +33,7 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnGenerarReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             this.btnVolver.BackColor = System.Drawing.Color.IndianRed;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(393, 485);
+            this.btnVolver.Location = new System.Drawing.Point(330, 485);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(89, 34);
             this.btnVolver.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Cross;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(508, 485);
+            this.btnEditar.Location = new System.Drawing.Point(445, 485);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(80, 34);
             this.btnEditar.TabIndex = 3;
@@ -97,7 +98,7 @@
             this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(607, 485);
+            this.btnActualizar.Location = new System.Drawing.Point(544, 485);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(99, 34);
             this.btnActualizar.TabIndex = 4;
@@ -105,12 +106,27 @@
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnGenerarReporte
+            // 
+            this.btnGenerarReporte.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnGenerarReporte.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerarReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarReporte.Location = new System.Drawing.Point(658, 485);
+            this.btnGenerarReporte.Name = "btnGenerarReporte";
+            this.btnGenerarReporte.Size = new System.Drawing.Size(95, 34);
+            this.btnGenerarReporte.TabIndex = 5;
+            this.btnGenerarReporte.Text = "Reporte";
+            this.btnGenerarReporte.UseVisualStyleBackColor = false;
+            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click);
+            // 
             // Historial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1047, 576);
+            this.Controls.Add(this.btnGenerarReporte);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnVolver);
@@ -133,5 +149,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnGenerarReporte;
     }
 }

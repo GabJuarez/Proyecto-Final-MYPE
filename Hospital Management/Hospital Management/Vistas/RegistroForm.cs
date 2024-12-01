@@ -21,7 +21,6 @@ namespace Hospital_Management.Vistas
             InitializeComponent();
         }
 
-        private List<Registro> listaRegistros = new List<Registro>();
         private void label10_Click(object sender, EventArgs e) { }
 
         private void btnVolver_Click(object sender, EventArgs e)

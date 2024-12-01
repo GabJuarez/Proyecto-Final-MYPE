@@ -1,4 +1,5 @@
 ﻿using Hospital_Management.Modelo_de_datos;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -124,7 +125,30 @@ namespace Hospital_Management.Vistas
         {
             ActualizarDataGridView();
         }
-    }   
+        
+        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        {
+            ReportDataSource dataSource = new ReportDataSource("dsRegistros", ListaR.Registros);
+            ReporteRegistros reporte = new ReporteRegistros();
+            reporte.ReportViewer2.LocalReport.DataSources.Clear();
+            reporte.ReportViewer2.LocalReport.DataSources.Add(dataSource);
+            reporte.ReportViewer2.LocalReport.ReportEmbeddedResource = "Hospital_Management.Reportes.rptRegistros.rdlc";
+            reporte.ReportViewer2.RefreshReport();
+            reporte.ShowDialog();
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 }
 

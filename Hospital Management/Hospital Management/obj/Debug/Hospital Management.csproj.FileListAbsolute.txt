@@ -90,3 +90,4 @@ C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital M
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital.5CE43CB6.Up2Date
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.ReporteRegistros.resources

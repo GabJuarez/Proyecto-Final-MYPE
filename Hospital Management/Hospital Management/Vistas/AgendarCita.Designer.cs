@@ -49,6 +49,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnGenerarReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,7 +196,7 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.IndianRed;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Location = new System.Drawing.Point(996, 593);
+            this.btnVolver.Location = new System.Drawing.Point(996, 627);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 15;
@@ -286,12 +287,25 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnGenerarReporte
+            // 
+            this.btnGenerarReporte.BackColor = System.Drawing.Color.Violet;
+            this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerarReporte.Location = new System.Drawing.Point(996, 557);
+            this.btnGenerarReporte.Name = "btnGenerarReporte";
+            this.btnGenerarReporte.Size = new System.Drawing.Size(130, 23);
+            this.btnGenerarReporte.TabIndex = 23;
+            this.btnGenerarReporte.Text = "Reporte";
+            this.btnGenerarReporte.UseVisualStyleBackColor = false;
+            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click);
+            // 
             // AgendarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1219, 778);
+            this.Controls.Add(this.btnGenerarReporte);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.label8);
@@ -346,5 +360,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnGenerarReporte;
     }
 }

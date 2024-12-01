@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Hospital_Management.Vistas
 {
-    public partial class ReporteCitas : Form
+    public partial class ReporteRegistros : Form
     {
-        public ReporteCitas()
+        public ReporteRegistros()
         {
             InitializeComponent();
         }
 
-        private void ReporteCitas_Load(object sender, EventArgs e)
+        private void ReporteRegistros_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            this.ReportViewer2.RefreshReport();
         }
     }
 }

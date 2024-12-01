@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Hospital_Management.Modelo_de_datos;
+using Microsoft.Reporting.WinForms;
+using Microsoft.ReportingServices.Diagnostics.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,12 +51,6 @@ namespace Hospital_Management.Vistas
             this.Hide();
             Estadisticas estadisticas = new Estadisticas();
             estadisticas.Show();
-        }
-
-        private void btnGenerarReporte_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        
         }
     }
 }

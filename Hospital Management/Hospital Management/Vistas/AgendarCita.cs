@@ -1,4 +1,5 @@
 ﻿using Hospital_Management.Modelo_de_datos;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -440,6 +441,16 @@ namespace Hospital_Management.Vistas
             }
         }
 
+        private void btnGenerarReporte_Click(object sender, EventArgs e)
+        {
+            ReportDataSource dataSource = new ReportDataSource("dsCitas", ListaC.Citas);
+            ReporteCitas reporte = new ReporteCitas();
+            reporte.reportViewer1.LocalReport.DataSources.Clear();
+            reporte.reportViewer1.LocalReport.DataSources.Add(dataSource);
+            reporte.reportViewer1.LocalReport.ReportEmbeddedResource = "Hospital_Management.Reportes.rptCitas.rdlc";
+            reporte.reportViewer1.RefreshReport();
+            reporte.ShowDialog();
+        }
     }
 }
 
