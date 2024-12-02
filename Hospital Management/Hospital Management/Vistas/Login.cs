@@ -17,6 +17,7 @@ namespace Hospital_Management
         {
             InitializeComponent();
         }
+        private void Login_Load(object sender, EventArgs e) { }
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
@@ -30,7 +31,7 @@ namespace Hospital_Management
                 Controles menu = new Controles();
                 menu.Show(); 
             }
-            else if (user == "Juan" && pass == "putoy")
+            else if (user == "Gabriel" && pass == "cuevas")
             {
                 this.Hide();
                 OpPacientes op = new OpPacientes();
@@ -42,5 +43,7 @@ namespace Hospital_Management
             }
 
         }
+
+        
     }
 }

@@ -49,5 +49,12 @@ namespace Hospital_Management.Vistas
             ReporteCitas formReportes = new ReporteCitas();
             formReportes.Show();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

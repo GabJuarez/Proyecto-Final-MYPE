@@ -478,7 +478,7 @@
           <Top>0.38in</Top>
           <Left>4.13in</Left>
           <Height>0.35in</Height>
-          <Width>1.85in</Width>
+          <Width>1.975in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -531,10 +531,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.44667in</Top>
-          <Left>3.91333in</Left>
+          <Top>0.59667in</Top>
+          <Left>4.91333in</Left>
           <Height>0.25in</Height>
-          <Width>2.06667in</Width>
+          <Width>0.34167in</Width>
           <Style>
             <Border>
               <Style>None</Style>

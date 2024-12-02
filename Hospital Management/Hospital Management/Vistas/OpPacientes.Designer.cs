@@ -36,6 +36,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEstadisticas = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 38);
+            this.label1.Size = new System.Drawing.Size(185, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "CONTROL";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -78,7 +79,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.IndianRed;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Location = new System.Drawing.Point(151, 304);
+            this.btnSalir.Location = new System.Drawing.Point(87, 301);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(106, 42);
             this.btnSalir.TabIndex = 9;
@@ -117,12 +118,26 @@
             this.btnEstadisticas.UseVisualStyleBackColor = false;
             this.btnEstadisticas.Click += new System.EventHandler(this.btnEstadisticas_Click_1);
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLogin.Location = new System.Drawing.Point(210, 301);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(106, 42);
+            this.btnLogin.TabIndex = 12;
+            this.btnLogin.Text = "LogIn";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // OpPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1233, 602);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnEstadisticas);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox2);
@@ -150,5 +165,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnEstadisticas;
+        private System.Windows.Forms.Button btnLogin;
     }
 }

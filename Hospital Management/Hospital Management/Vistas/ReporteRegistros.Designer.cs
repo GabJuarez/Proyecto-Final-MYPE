@@ -34,6 +34,7 @@
             // ReportViewer2
             // 
             this.ReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReportViewer2.LocalReport.ReportEmbeddedResource = "Hospital_Management.Reportes.rptRegistros.rdlc";
             this.ReportViewer2.Location = new System.Drawing.Point(0, 0);
             this.ReportViewer2.Name = "ReportViewer2";
             this.ReportViewer2.ServerReport.BearerToken = null;
