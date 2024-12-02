@@ -62,8 +62,6 @@ C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital M
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.AssemblyReference.cache
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.SuggestedBindingRedirects.cache
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.exe.config
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Properties.Resources.resources
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.AgendarCita.resources
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.Controles.resources
@@ -81,3 +79,21 @@ C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital M
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital.5CE43CB6.Up2Date
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\EPPlus.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\EPPlus.Interfaces.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\EPPlus.System.Drawing.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Buffers.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.ComponentModel.Annotations.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Drawing.Common.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Memory.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Numerics.Vectors.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\EPPlus.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Buffers.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Drawing.Common.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Drawing.Common.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Memory.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Numerics.Vectors.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\System.Runtime.CompilerServices.Unsafe.xml

@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Hospital Management")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Gestionamiento de datos hospitalarios")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP")]
+[assembly: AssemblyCompany("Gabriel Juárez")]
 [assembly: AssemblyProduct("Hospital Management")]
 [assembly: AssemblyCopyright("Copyright © HP 2024")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Gabriel Juárez")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]

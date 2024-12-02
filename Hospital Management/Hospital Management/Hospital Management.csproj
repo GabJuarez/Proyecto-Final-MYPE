@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EPPlus, Version=7.5.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>packages\EPPlus.7.5.1\lib\net462\EPPlus.dll</HintPath>
@@ -236,6 +239,7 @@
     <EmbeddedResource Include="Vistas\ReporteRegistros.resx">
       <DependentUpon>ReporteRegistros.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="DataSet\dsCitas.xsc">
       <DependentUpon>dsCitas.xsd</DependentUpon>
     </None>
