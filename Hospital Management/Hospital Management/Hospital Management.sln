@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital Management", "Hospital Management.csproj", "{2089996A-05E8-4C43-B8A0-312C54C2EA16}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HospitalManagementSetup", "..\HospitalManagementSetup\HospitalManagementSetup.vdproj", "{A456B659-DD4B-4A0C-90D9-2F3FB639AC6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{2089996A-05E8-4C43-B8A0-312C54C2EA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2089996A-05E8-4C43-B8A0-312C54C2EA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2089996A-05E8-4C43-B8A0-312C54C2EA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A456B659-DD4B-4A0C-90D9-2F3FB639AC6E}.Debug|Any CPU.ActiveCfg = Debug
+		{A456B659-DD4B-4A0C-90D9-2F3FB639AC6E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

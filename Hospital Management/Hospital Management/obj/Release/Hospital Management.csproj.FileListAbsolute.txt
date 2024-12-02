@@ -1,0 +1,83 @@
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\x86\SqlServerSpatial160.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\x64\SqlServerSpatial160.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Hospital Management.exe.config
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Hospital Management.exe
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\EnvDTE.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\stdole.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.AssemblyReference.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.SuggestedBindingRedirects.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.exe.config
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Properties.Resources.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.AgendarCita.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.Controles.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.EditarRegistroForm.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.Estadisticas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.EstadisticasCitas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.Historial.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Login.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.OpPacientes.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.RegistroForm.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.ReporteCitas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital_Management.Vistas.ReporteRegistros.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.GenerateResource.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.csproj.CoreCompileInputs.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital.5CE43CB6.Up2Date
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.exe
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Release\Hospital Management.pdb
