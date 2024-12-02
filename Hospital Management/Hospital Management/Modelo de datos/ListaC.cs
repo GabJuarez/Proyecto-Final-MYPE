@@ -9,8 +9,6 @@ namespace Hospital_Management.Modelo_de_datos
 {
     public class ListaC
     {
-        public static List<Cita> Citas = new List<Cita>();
-       
-
+        public static List<Cita> Citas = new List<Cita>(); 
     }
 }

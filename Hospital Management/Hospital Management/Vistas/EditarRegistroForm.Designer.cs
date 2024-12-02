@@ -60,6 +60,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.BtnVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +69,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(408, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 38);
+            this.label1.Size = new System.Drawing.Size(403, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Editar Registro de Paciente";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -205,6 +206,7 @@
             this.txtNombresYApellidos.Name = "txtNombresYApellidos";
             this.txtNombresYApellidos.Size = new System.Drawing.Size(214, 22);
             this.txtNombresYApellidos.TabIndex = 15;
+            this.txtNombresYApellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombresYApellidos_KeyPress);
             // 
             // txtDireccion
             // 
@@ -213,6 +215,7 @@
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(214, 22);
             this.txtDireccion.TabIndex = 16;
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // txtNContacto
             // 
@@ -221,6 +224,7 @@
             this.txtNContacto.Name = "txtNContacto";
             this.txtNContacto.Size = new System.Drawing.Size(214, 22);
             this.txtNContacto.TabIndex = 17;
+            this.txtNContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNContacto_KeyPress);
             // 
             // txtEdad
             // 
@@ -229,6 +233,7 @@
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(214, 22);
             this.txtEdad.TabIndex = 18;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtSintomas
             // 
@@ -237,6 +242,7 @@
             this.txtSintomas.Name = "txtSintomas";
             this.txtSintomas.Size = new System.Drawing.Size(186, 22);
             this.txtSintomas.TabIndex = 19;
+            this.txtSintomas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSintomas_KeyPress);
             // 
             // txtDiagnostico
             // 
@@ -245,6 +251,7 @@
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Size = new System.Drawing.Size(186, 22);
             this.txtDiagnostico.TabIndex = 20;
+            this.txtDiagnostico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiagnostico_KeyPress);
             // 
             // txtMedicamentos
             // 
@@ -253,6 +260,7 @@
             this.txtMedicamentos.Name = "txtMedicamentos";
             this.txtMedicamentos.Size = new System.Drawing.Size(186, 22);
             this.txtMedicamentos.TabIndex = 21;
+            this.txtMedicamentos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedicamentos_KeyPress);
             // 
             // txtId
             // 
@@ -261,6 +269,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
             this.txtId.TabIndex = 22;
+            this.txtId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtId_KeyPress);
             // 
             // txtEnfermedadAnteriorImportante
             // 
@@ -269,6 +278,7 @@
             this.txtEnfermedadAnteriorImportante.Name = "txtEnfermedadAnteriorImportante";
             this.txtEnfermedadAnteriorImportante.Size = new System.Drawing.Size(409, 22);
             this.txtEnfermedadAnteriorImportante.TabIndex = 23;
+            this.txtEnfermedadAnteriorImportante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnfermedadAnteriorImportante_KeyPress);
             // 
             // cmbGenero
             // 
@@ -345,7 +355,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(709, 538);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(92, 23);
             this.btnGuardar.TabIndex = 29;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -369,13 +379,26 @@
             this.btnEliminar.BackColor = System.Drawing.Color.IndianRed;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(790, 538);
+            this.btnEliminar.Location = new System.Drawing.Point(807, 538);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(92, 23);
             this.btnEliminar.TabIndex = 32;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(905, 538);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(90, 23);
+            this.btnLimpiar.TabIndex = 33;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // EditarRegistroForm
             // 
@@ -383,6 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1216, 623);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.BtnVolver);
             this.Controls.Add(this.btnGuardar);
@@ -457,5 +481,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button BtnVolver;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

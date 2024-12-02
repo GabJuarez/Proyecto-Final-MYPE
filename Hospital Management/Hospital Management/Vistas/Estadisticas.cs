@@ -33,17 +33,17 @@ namespace Hospital_Management.Vistas
                 return;
             }
 
-            // Actualizar datos del gráfico de Género
-            chartGenero.Series.Clear(); // Elimina las series del gráfico
-            chartGenero.Legends.Clear(); // Elimina las leyendas
+            // actualizar los datos
+            chartGenero.Series.Clear(); 
+            chartGenero.Legends.Clear(); 
             var datosGenero = registros.GroupBy(r => r.Genero)
                                        .Select(g => new { Genero = g.Key, Total = g.Count() })
                                        .ToList();
 
-            // Crear una nueva serie si no existe
+      
             if (chartGenero.Series.Count == 0)
             {
-                chartGenero.Series.Add("Genero"); // Añadir una serie con nombre
+                chartGenero.Series.Add("Genero"); 
             }
 
             foreach (var item in datosGenero)
@@ -51,17 +51,17 @@ namespace Hospital_Management.Vistas
                 chartGenero.Series[0].Points.AddXY(item.Genero, item.Total);
             }
 
-            // Actualizar datos del gráfico de Requerimiento de Sala
-            chartRequerimientoSala.Series.Clear(); // Elimina las series del gráfico
-            chartRequerimientoSala.Legends.Clear(); // Elimina las leyendas
+          // actualizaar requerimiento de sala
+            chartRequerimientoSala.Series.Clear(); 
+            chartRequerimientoSala.Legends.Clear(); 
             var datosSala = registros.GroupBy(r => r.RequerimientoDeSala)
                                      .Select(g => new { RequerimientoDeSala = g.Key, Total = g.Count() })
                                      .ToList();
 
-            // Crear una nueva serie si no existe
+           
             if (chartRequerimientoSala.Series.Count == 0)
             {
-                chartRequerimientoSala.Series.Add("RequerimientoSala"); // Añadir una serie con nombre
+                chartRequerimientoSala.Series.Add("RequerimientoSala"); 
             }
 
             foreach (var item in datosSala)
@@ -69,17 +69,16 @@ namespace Hospital_Management.Vistas
                 chartRequerimientoSala.Series[0].Points.AddXY(item.RequerimientoDeSala, item.Total);
             }
 
-            // Actualizar datos del gráfico de Tipo de Sangre
-            chartTipoSangre.Series.Clear(); // Elimina las series del gráfico
-            chartTipoSangre.Legends.Clear(); // Elimina las leyendas
+            // actualizar tipo de sangre
+            chartTipoSangre.Series.Clear(); 
+            chartTipoSangre.Legends.Clear(); 
             var datosSangre = registros.GroupBy(r => r.Tiposangre)
                                        .Select(g => new { TipoSangre = g.Key, Total = g.Count() })
                                        .ToList();
 
-            // Crear una nueva serie si no existe
             if (chartTipoSangre.Series.Count == 0)
             {
-                chartTipoSangre.Series.Add("TipoSangre"); // Añadir una serie con nombre
+                chartTipoSangre.Series.Add("TipoSangre"); 
             }
 
             foreach (var item in datosSangre)

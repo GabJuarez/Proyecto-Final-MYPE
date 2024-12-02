@@ -12,13 +12,11 @@ namespace Hospital_Management.Vistas
         public EstadisticasCitas()
         {
             InitializeComponent();
-            // Asociamos el evento de carga del formulario
             this.Load += new EventHandler(EstadisticasCitas_Load);
         }
 
         private void EstadisticasCitas_Load(object sender, EventArgs e)
         {
-            // Cargar los datos de las citas y crear los gráficos al cargar el formulario
             CargarDatosCitas();
             CrearGraficosDoctoresYHoras();
         }
@@ -26,7 +24,6 @@ namespace Hospital_Management.Vistas
 
         private void CargarDatosCitas()
         {
-            // Asegurarse de que los datos de las citas estén cargados
             AgendarCita agendarCita = new AgendarCita();
             agendarCita.ConfigurarDataGridView();
             agendarCita.ActualizarDataGridView();
@@ -34,30 +31,28 @@ namespace Hospital_Management.Vistas
 
         private void CrearGraficosDoctoresYHoras()
         {
-            // Crear los gráficos de Doctores y Horas
             CrearGraficoDoctores();
             CrearGraficoHoras();
         }
 
         private void CrearGraficoDoctores()
         {
-            // Actualizar datos del gráfico de Doctores
-            chartDoctores.Series.Clear();  // Elimina las series del gráfico
-            chartDoctores.Legends.Clear(); // Elimina las leyendas
+            chartDoctores.Series.Clear();
+            chartDoctores.Legends.Clear(); 
 
-            // Agrupar las citas por Doctor y contar el total de citas
+            // agrupando las citas
+
             var datosDoctores = ListaC.Citas
                 .GroupBy(c => c.Doctor)
                 .Select(g => new { Doctor = g.Key, Total = g.Count() })
                 .ToList();
 
-            // Crear una nueva serie si no existe
             if (chartDoctores.Series.Count == 0)
             {
-                chartDoctores.Series.Add("Doctores");  // Añadir una serie con nombre
+                chartDoctores.Series.Add("Doctores");  
             }
 
-            // Agregar los puntos al gráfico
+            // agregando los puntos al gráfico
             foreach (var item in datosDoctores)
             {
                 chartDoctores.Series[0].Points.AddXY(item.Doctor, item.Total);
@@ -66,23 +61,20 @@ namespace Hospital_Management.Vistas
 
         private void CrearGraficoHoras()
         {
-            // Actualizar datos del gráfico de Horas
-            chartHoras.Series.Clear();  // Elimina las series del gráfico
-            chartHoras.Legends.Clear(); // Elimina las leyendas
+            chartHoras.Series.Clear();  
+            chartHoras.Legends.Clear();
 
-            // Agrupar las citas por Hora y contar el total de citas
+            //agrupando las citas
             var datosHoras = ListaC.Citas
                 .GroupBy(c => c.Hora)
                 .Select(g => new { Hora = g.Key, Total = g.Count() })
                 .ToList();
 
-            // Crear una nueva serie si no existe
             if (chartHoras.Series.Count == 0)
             {
-                chartHoras.Series.Add("Horas");  // Añadir una serie con nombre
+                chartHoras.Series.Add("Horas");  
             }
 
-            // Agregar los puntos al gráfico
             foreach (var item in datosHoras)
             {
                 chartHoras.Series[0].Points.AddXY(item.Hora, item.Total);

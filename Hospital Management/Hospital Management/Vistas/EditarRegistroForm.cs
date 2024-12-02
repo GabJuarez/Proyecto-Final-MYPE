@@ -140,66 +140,51 @@ namespace Hospital_Management.Vistas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            FileStream fs = null;
-            BinaryWriter writer = null;
-            List<Registro> registros = new List<Registro>();
-
             try
             {
-                if (File.Exists("registros.bin"))
+                // Buscar el registro en la lista
+                var registro = ListaR.Registros.FirstOrDefault(r => r.Id == registroActual.Id);
+                if (registro != null)
                 {
-                    using (fs = new FileStream("registros.bin", FileMode.Open))
-                    using (BinaryReader reader = new BinaryReader(fs))
-                    {
-                        while (fs.Position < fs.Length)
-                        {
-                            string idExistente = reader.ReadString();
-                            string nombre = reader.ReadString();
-                            string direccion = reader.ReadString();
-                            string contacto = reader.ReadString();
-                            string edad = reader.ReadString();
-                            string genero = reader.ReadString();
-                            string tipoSangre = reader.ReadString();
-                            string enfermedadAnterior = reader.ReadString();
-                            string sintomas = reader.ReadString();
-                            string diagnostico = reader.ReadString();
-                            string medicamentos = reader.ReadString();
-                            string requerimientoSala = reader.ReadString();
-                            string tipoSala = reader.ReadString();
-
-                            registros.Add(new Registro(
-                                idExistente, nombre, direccion, contacto, edad, genero,
-                                tipoSangre, enfermedadAnterior, sintomas, diagnostico,
-                                medicamentos, requerimientoSala, tipoSala
-                            ));
-                        }
-                    }
+                    // Actualizar los datos del registro
+                    registro.Nombre = txtNombresYApellidos.Text;
+                    registro.Direccion = txtDireccion.Text;
+                    registro.Ncontacto = txtNContacto.Text;
+                    registro.Edad = txtEdad.Text;
+                    registro.Genero = cmbGenero.SelectedItem?.ToString();
+                    registro.Tiposangre = cmbTipoDeSangre.SelectedItem?.ToString();
+                    registro.Enfermedadanterior = txtEnfermedadAnteriorImportante.Text;
+                    registro.Sintomas = txtSintomas.Text;
+                    registro.Diagnostico = txtDiagnostico.Text;
+                    registro.Medicamentos = txtMedicamentos.Text;
+                    registro.RequerimientoDeSala = cmbRequerimientoDeSala.SelectedItem?.ToString();
+                    registro.TipoDeSala = cmbTipoDeSala.SelectedItem?.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el registro para editar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
 
-                foreach (var reg in registros)
-                {
-                    if (reg.Id == registroActual.Id)
-                    {
-                        reg.Nombre = txtNombresYApellidos.Text;
-                        reg.Direccion = txtDireccion.Text;
-                        reg.Ncontacto = txtNContacto.Text;
-                        reg.Edad = txtEdad.Text;
-                        reg.Genero = cmbGenero.SelectedItem.ToString();
-                        reg.Tiposangre = cmbTipoDeSangre.SelectedItem.ToString();
-                        reg.Enfermedadanterior = txtEnfermedadAnteriorImportante.Text;
-                        reg.Sintomas = txtSintomas.Text;
-                        reg.Diagnostico = txtDiagnostico.Text;
-                        reg.Medicamentos = txtMedicamentos.Text;
-                        reg.RequerimientoDeSala = cmbRequerimientoDeSala.SelectedItem.ToString();
-                        reg.TipoDeSala = cmbTipoDeSala.SelectedItem.ToString();
-                        break;
-                    }
-                }
+                GuardarRegistrosEnArchivo();
 
-                using (fs = new FileStream("registros.bin", FileMode.Create))
-                using (writer = new BinaryWriter(fs))
+                MessageBox.Show("Los cambios se han guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar el registro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GuardarRegistrosEnArchivo()
+        {
+            try
+            {
+                using (var fs = new FileStream("registros.bin", FileMode.Create))
+                using (var writer = new BinaryWriter(fs))
                 {
-                    foreach (var reg in registros)
+                    foreach (var reg in ListaR.Registros)
                     {
                         writer.Write(reg.Id);
                         writer.Write(reg.Nombre);
@@ -216,23 +201,131 @@ namespace Hospital_Management.Vistas
                         writer.Write(reg.TipoDeSala);
                     }
                 }
-
-                MessageBox.Show("Los cambios se han guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al guardar el registro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                if (writer != null) writer.Close();
-                if (fs != null) fs.Close();
+                MessageBox.Show($"Error al guardar los registros en el archivo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var registro = ListaR.Registros.FirstOrDefault(r => r.Id == registroActual.Id);
 
+                if (registro != null)
+                {
+                    var confirmResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este registro?",
+                                                        "Confirmación",
+                                                        MessageBoxButtons.YesNo,
+                                                        MessageBoxIcon.Question);
+
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        ListaR.Registros.Remove(registro);
+                        GuardarRegistrosEnArchivo();
+                        Limpiar();
+                       
+
+                        MessageBox.Show("El registro ha sido eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el registro para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al eliminar el registro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void txtId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                MessageBox.Show("Solo se permiten números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtNombresYApellidos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                MessageBox.Show("Solo se permiten letras y espacios.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e) { }
+       
+        private void txtNContacto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                MessageBox.Show("Solo se permiten números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                MessageBox.Show("Solo se permiten números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtSintomas_KeyPress(object sender, KeyPressEventArgs e) { }
+      
+
+        private void txtDiagnostico_KeyPress(object sender, KeyPressEventArgs e) { }
+        
+
+        private void txtMedicamentos_KeyPress(object sender, KeyPressEventArgs e) { }
+        
+
+        private void txtEnfermedadAnteriorImportante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                MessageBox.Show("Solo se permiten letras y espacios.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void Limpiar()
+        {
+            txtId.Clear();
+            txtNombresYApellidos.Clear();
+            txtDireccion.Clear();
+            txtNContacto.Clear();
+            txtEdad.Clear();
+            txtEnfermedadAnteriorImportante.Clear();
+            cmbGenero.SelectedIndex = -1;
+            cmbTipoDeSangre.SelectedIndex = -1;
+            txtSintomas.Clear();
+            txtDiagnostico.Clear();
+            txtMedicamentos.Clear();
+            cmbRequerimientoDeSala.SelectedIndex = -1;
+            cmbTipoDeSala.SelectedIndex = -1;
+            txtNombresYApellidos.Focus();
         }
     }
 }

@@ -23,11 +23,13 @@ namespace Hospital_Management.Vistas
 
         private void AgendarCita_Load(object sender, EventArgs e)
         {
+            
             dgvCitas.MultiSelect = false;
             ConfigurarDataGridView();
             CargarCitasDesdeArchivo();
             btnGuardar.Enabled = false;
             mtxtFecha.ValidatingType = typeof(System.DateTime);
+            Limpiar();
 
         }
 
@@ -288,7 +290,6 @@ namespace Hospital_Management.Vistas
                         ListaC.Citas = (List<Cita>)formatter.Deserialize(fs);
                     }
 
-                    // Cargar las citas en el DataGridView
                     foreach (var cita in ListaC.Citas)
                     {
                         dgvCitas.Rows.Add(
@@ -304,16 +305,17 @@ namespace Hospital_Management.Vistas
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al cargar las citas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocurrió un error al cargar las citas. Detalles: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
 
 
 
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            // Verificar si hay una fila seleccionada en el DataGridView
+            
             if (dgvCitas.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Por favor, seleccione una fila para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -322,12 +324,12 @@ namespace Hospital_Management.Vistas
 
             try
             {
-                // Obtener el índice de la fila seleccionada
+                
                 int selectedIndex = dgvCitas.SelectedRows[0].Index;
 
-                // Actualizar la cita en la lista con los nuevos valores ingresados
+                
                 Cita citaActualizada = ListaC.Citas[selectedIndex];
-                citaActualizada.Fecha = DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null); // Actualiza la fecha
+                citaActualizada.Fecha = DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null); 
                 citaActualizada.Hora = cmbHora.SelectedItem.ToString();
                 if (cmbDoctor.SelectedItem != null)
                 {
@@ -338,11 +340,11 @@ namespace Hospital_Management.Vistas
                     MessageBox.Show("Por favor, seleccione un doctor.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }            
-                citaActualizada.Consultorio = cmbConsultorio.SelectedItem.ToString();           // Actualiza el consultorio
-                citaActualizada.Motivo = rtxtMotivo.Text;                                       // Actualiza el motivo
-                citaActualizada.Comentarios = rtxtComentarios.Text;                             // Actualiza los comentarios
+                citaActualizada.Consultorio = cmbConsultorio.SelectedItem.ToString();           
+                citaActualizada.Motivo = rtxtMotivo.Text;                                       
+                citaActualizada.Comentarios = rtxtComentarios.Text;                             
 
-                // Actualizar la fila seleccionada en el DataGridView
+               
                 DataGridViewRow row = dgvCitas.Rows[selectedIndex];
                 row.Cells["Fecha"].Value = citaActualizada.Fecha.ToString("dd/MM/yyyy");
                 row.Cells["Hora"].Value = citaActualizada.Hora;
@@ -350,28 +352,24 @@ namespace Hospital_Management.Vistas
                 row.Cells["Consultorio"].Value = citaActualizada.Consultorio;
                 row.Cells["Motivo"].Value = citaActualizada.Motivo;
                 row.Cells["Comentarios"].Value = citaActualizada.Comentarios;
-
-                // Guardar los cambios en el archivo binario
                 GuardarCitasEnArchivo();
 
-                // Mostrar mensaje de éxito
+              
                 MessageBox.Show("Cita actualizada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Limpiar los controles del formulario
                 Limpiar();
 
-                // Ajustar el estado de los botones
-                btnGuardar.Enabled = true;  // Habilitar el botón de guardar
-                btnEditar.Enabled = false; // Deshabilitar el botón de editar después de guardar los cambios
+                
+                btnGuardar.Enabled = true;  
+                btnEditar.Enabled = false; 
             }
             catch (FormatException)
             {
-                // Manejar errores de formato de fecha
+                
                 MessageBox.Show("La fecha ingresada no tiene un formato válido. Use dd/MM/yyyy.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                // Manejar otros errores
+              
                 MessageBox.Show($"Ocurrió un error al actualizar la cita: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
