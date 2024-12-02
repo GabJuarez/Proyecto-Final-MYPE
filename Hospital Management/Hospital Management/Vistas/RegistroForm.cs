@@ -145,6 +145,7 @@ namespace Hospital_Management.Vistas
         {
             Validar();
         }
+
         private void txtSintomas_TextChanged(object sender, EventArgs e)
         {
             Validar();
@@ -231,6 +232,7 @@ namespace Hospital_Management.Vistas
                 Registro nuevoRegistro = new Registro(id, nombre, direccion, contacto, edad, genero, tipoSangre,
                     enfermedadAnterior, sintomas, diagnostico, medicamentos, requerimientoSala, tipoSala);
 
+                // guardar el registro en el archivo
                 fs = new FileStream("registros.bin", FileMode.Append);
                 writer = new BinaryWriter(fs);
 
@@ -248,6 +250,8 @@ namespace Hospital_Management.Vistas
                 writer.Write(nuevoRegistro.RequerimientoDeSala);
                 writer.Write(nuevoRegistro.TipoDeSala);
 
+                ListaR.Registros.Add(nuevoRegistro);
+
                 MessageBox.Show("Registro guardado correctamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -260,6 +264,7 @@ namespace Hospital_Management.Vistas
                 if (fs != null) fs.Close();
             }
         }
+
         private bool EsIdRepetido(string id)
         {
             FileStream fs = null;
@@ -277,21 +282,13 @@ namespace Hospital_Management.Vistas
                 {
                     string idExistente = reader.ReadString();
 
-                    reader.ReadString();
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString();
-                    reader.ReadString();
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString(); 
-                    reader.ReadString(); 
+                    while (fs.Position < fs.Length)
+                    {
+                        reader.ReadString();
+                    }
 
                     if (idExistente == id)
-                        return true; 
+                        return true;
                 }
             }
             catch (Exception ex)
@@ -303,7 +300,6 @@ namespace Hospital_Management.Vistas
                 if (reader != null) reader.Close();
                 if (fs != null) fs.Close();
             }
-
             return false; 
         }
 

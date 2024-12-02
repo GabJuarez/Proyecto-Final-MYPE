@@ -12,7 +12,6 @@ namespace Hospital_Management.Vistas
         public Estadisticas()
         {
             InitializeComponent();
-            this.Load += new EventHandler(Estadisticas_Load);
         }
 
         private void Estadisticas_Load(object sender, EventArgs e)
@@ -89,7 +88,6 @@ namespace Hospital_Management.Vistas
 
         private Chart CrearGrafico(string titulo, IEnumerable<object> data, string xValueMember, string yValueMember, SeriesChartType chartType)
         {
-            // Crear y configurar un gráfico genérico
             Chart chart = new Chart();
             chart.Titles.Add(titulo);
 
@@ -99,7 +97,7 @@ namespace Hospital_Management.Vistas
             Series series = new Series
             {
                 ChartType = chartType,
-                IsValueShownAsLabel = true // Mostrar los valores en las etiquetas
+                IsValueShownAsLabel = true 
             };
             series.Points.DataBind(data, xValueMember, yValueMember, null);
 
@@ -109,7 +107,6 @@ namespace Hospital_Management.Vistas
 
         private void AjustarTamañoGrafico(Chart chart)
         {
-            // Ajustar el tamaño para que todos los gráficos quepan en el formulario
             chart.Dock = DockStyle.Top;
             chart.Height = this.Height / 3;
         }
