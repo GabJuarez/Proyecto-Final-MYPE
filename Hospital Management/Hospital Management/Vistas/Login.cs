@@ -16,6 +16,7 @@ namespace Hospital_Management
         public Login()
         {
             InitializeComponent();
+            txtUser.Focus();
         }
         private void Login_Load(object sender, EventArgs e) { }
 

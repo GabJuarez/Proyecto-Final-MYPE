@@ -112,7 +112,7 @@
             this.btnAcceder.Location = new System.Drawing.Point(604, 410);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(100, 32);
-            this.btnAcceder.TabIndex = 5;
+            this.btnAcceder.TabIndex = 2;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
             this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
@@ -147,7 +147,7 @@
             this.txtUser.Location = new System.Drawing.Point(604, 229);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 22);
-            this.txtUser.TabIndex = 7;
+            this.txtUser.TabIndex = 0;
             // 
             // txtPassword
             // 
@@ -157,7 +157,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
-            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabIndex = 1;
             // 
             // Login
             // 

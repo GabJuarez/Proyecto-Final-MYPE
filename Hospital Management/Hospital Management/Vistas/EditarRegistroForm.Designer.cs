@@ -225,6 +225,7 @@
             this.txtNContacto.Size = new System.Drawing.Size(214, 22);
             this.txtNContacto.TabIndex = 5;
             this.txtNContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNContacto_KeyPress);
+            this.txtNContacto.Leave += new System.EventHandler(this.txtNContacto_Leave);
             // 
             // txtEdad
             // 
@@ -305,6 +306,7 @@
             this.cmbTipoDeSala.Name = "cmbTipoDeSala";
             this.cmbTipoDeSala.Size = new System.Drawing.Size(186, 24);
             this.cmbTipoDeSala.TabIndex = 13;
+            this.cmbTipoDeSala.SelectedIndexChanged += new System.EventHandler(this.cmbTipoDeSala_SelectedIndexChanged);
             // 
             // cmbRequerimientoDeSala
             // 
@@ -317,6 +319,7 @@
             this.cmbRequerimientoDeSala.Name = "cmbRequerimientoDeSala";
             this.cmbRequerimientoDeSala.Size = new System.Drawing.Size(186, 24);
             this.cmbRequerimientoDeSala.TabIndex = 12;
+            this.cmbRequerimientoDeSala.SelectedIndexChanged += new System.EventHandler(this.cmbRequerimientoDeSala_SelectedIndexChanged);
             // 
             // cmbTipoDeSangre
             // 
