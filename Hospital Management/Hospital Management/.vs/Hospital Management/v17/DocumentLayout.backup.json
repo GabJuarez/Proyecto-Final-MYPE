@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -159,7 +159,7 @@
               "RelativeDocumentMoniker": "Vistas\\RegistroForm.cs",
               "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs",
               "RelativeToolTip": "Vistas\\RegistroForm.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAWwPEAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAA1wPEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T14:41:49.928Z",
               "EditorCaption": ""
@@ -173,8 +173,7 @@
               "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs [Design]",
               "RelativeToolTip": "Vistas\\RegistroForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T04:00:52.371Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-02T04:00:52.371Z"
             },
             {
               "$type": "Document",
