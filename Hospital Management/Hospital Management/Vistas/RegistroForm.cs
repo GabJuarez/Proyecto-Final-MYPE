@@ -50,15 +50,53 @@ namespace Hospital_Management.Vistas
                 e.Handled = true;
                 return;
             }
+
+            // Limitar la longitud a 8 dígitos
+            if (char.IsDigit(e.KeyChar) && txtNumeroContacto.Text.Length >= 8)
+            {
+                MessageBox.Show("El número de teléfono ingresado debe tener 8 dígitos", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true; // Bloquear si excede la longitud
+            }
         }
+
+
+        private void txtNumeroContacto_Leave(object sender, EventArgs e)
+        {
+            if (txtNumeroContacto.Text.Length != 8)
+            {
+                MessageBox.Show("El número de contacto debe tener exactamente 8 dígitos.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNumeroContacto.Clear(); // Limpiar el campo si no es válido
+                txtNumeroContacto.Focus();
+            }
+        }
+
 
         private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
         {
+           
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
             {
                 MessageBox.Show("Solo se permiten números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Handled = true;
+                e.Handled = true; 
                 return;
+            }
+
+            // verificar el valor después de insertar el carácter
+            string textAfterKeyPress = txtEdad.Text.Insert(txtEdad.SelectionStart, e.KeyChar.ToString());
+
+            if (int.TryParse(textAfterKeyPress, out int edad))
+            {
+                if (edad > 120 || edad <= 0)
+                {
+                    MessageBox.Show("La edad no es válida. Por favor, ingresa una edad válida.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEdad.Clear(); 
+                    e.Handled = true; // Evitar que el carácter se procese
+                }
+            }
+            else
+            {
+                txtEdad.Clear();
+                e.Handled = true;
             }
         }
 
@@ -80,11 +118,28 @@ namespace Hospital_Management.Vistas
                 e.Handled = true;
                 return;
             }
+            string textAfterKeyPress = txtIdPaciente.Text.Insert(txtIdPaciente.SelectionStart, e.KeyChar.ToString());
+
+            if (int.TryParse(textAfterKeyPress, out int id))
+            {
+                if (id <= 0)
+                {
+                    MessageBox.Show("El ID no es válido. Por favor, ingresa un ID válido.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtIdPaciente.Clear();
+                    e.Handled = true; // Evitar que el carácter se procese
+                }
+            }
+            else
+            {
+                txtIdPaciente.Clear();
+                e.Handled = true;
+            }
         }
 
         private void Registro_Load(object sender, EventArgs e)
         {
             btnGuardar.Enabled = false;
+            cmbTipoDeSala.Enabled = false;
         }
 
         private void Validar()
@@ -163,11 +218,38 @@ namespace Hospital_Management.Vistas
 
         private void cmbRequerimientoDeSala_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Validar();
+            if (cmbRequerimientoDeSala.SelectedItem?.ToString() == "No")
+            {
+                cmbTipoDeSala.SelectedItem = "Ninguna";
+                cmbTipoDeSala.Enabled = false;
+            }
+            else
+            {
+                cmbTipoDeSala.Enabled = true;
+                if (cmbRequerimientoDeSala.SelectedItem?.ToString() == "Sí" && cmbTipoDeSala.SelectedItem?.ToString() == "Ninguna")
+                {
+                    // Si la opción "Ninguna" está seleccionada, la deseleccionamos
+                    cmbTipoDeSala.SelectedItem = null;
+                }
+                Validar();
+            }
         }
 
         private void cmbTipoDeSala_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbRequerimientoDeSala.SelectedIndex != -1)
+            {
+                cmbTipoDeSala.Enabled = true;
+            }
+
+            if (cmbTipoDeSala.SelectedItem != null && cmbRequerimientoDeSala.SelectedItem != null)
+            {
+                if (cmbTipoDeSala.SelectedItem.ToString() == "Ninguna" && cmbRequerimientoDeSala.SelectedItem.ToString() == "Sí")
+                {
+                    MessageBox.Show("La opción 'Ninguna' no se encuentra disponible cuando el paciente requiere sala", "Selección no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cmbTipoDeSala.SelectedIndex = -1;
+                }
+            }
             Validar();
         }
 
@@ -302,7 +384,6 @@ namespace Hospital_Management.Vistas
             }
             return false; 
         }
-
 
     }
 }

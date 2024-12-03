@@ -8,33 +8,37 @@ C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\D
 C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital Management.pdb
 C:\Users\juare\OneDrive\Escritorio\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Login.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.AssemblyReference.cache
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Properties.Resources.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.AgendarCita.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Controles.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.EditarRegistroForm.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Estadisticas.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.EstadisticasCitas.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Historial.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Login.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.OpPacientes.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.RegistroForm.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.ReporteCitas.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.GenerateResource.cache
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.CoreCompileInputs.cache
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\x86\SqlServerSpatial160.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\x64\SqlServerSpatial160.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Hospital Management.exe.config
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Hospital Management.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.ReportViewer.Design.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Buffers.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Memory.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EnvDTE.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\stdole.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Buffers.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.pdb
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Memory.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -85,25 +89,21 @@ C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital M
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.AssemblyReference.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Properties.Resources.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.AgendarCita.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Controles.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.EditarRegistroForm.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Estadisticas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.EstadisticasCitas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.Historial.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Login.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.OpPacientes.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.RegistroForm.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.ReporteCitas.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.ReporteRegistros.resources
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.GenerateResource.cache
+C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.csproj.CoreCompileInputs.cache
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital.5CE43CB6.Up2Date
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.exe
 C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital Management.pdb
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\obj\Debug\Hospital_Management.Vistas.ReporteRegistros.resources
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.Interfaces.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.System.Drawing.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Buffers.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.ComponentModel.Annotations.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Memory.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\EPPlus.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Buffers.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.pdb
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Drawing.Common.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Memory.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\juare\OneDrive\Escritorio\Proyecto FInal\Hospital Management\Hospital Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

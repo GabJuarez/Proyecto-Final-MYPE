@@ -171,6 +171,7 @@
             this.txtNumeroContacto.TabIndex = 3;
             this.txtNumeroContacto.TextChanged += new System.EventHandler(this.txtNumeroContacto_TextChanged);
             this.txtNumeroContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroContacto_KeyPress);
+            this.txtNumeroContacto.Leave += new System.EventHandler(this.txtNumeroContacto_Leave);
             // 
             // txtEdad
             // 
