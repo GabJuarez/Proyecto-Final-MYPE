@@ -148,7 +148,7 @@
             this.txtNombresYApellidos.Location = new System.Drawing.Point(219, 189);
             this.txtNombresYApellidos.Name = "txtNombresYApellidos";
             this.txtNombresYApellidos.Size = new System.Drawing.Size(377, 22);
-            this.txtNombresYApellidos.TabIndex = 9;
+            this.txtNombresYApellidos.TabIndex = 1;
             this.txtNombresYApellidos.TextChanged += new System.EventHandler(this.txtNombresYApellidos_TextChanged);
             this.txtNombresYApellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombresYApellidos_KeyPress);
             // 
@@ -158,7 +158,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(219, 231);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(377, 22);
-            this.txtDireccion.TabIndex = 10;
+            this.txtDireccion.TabIndex = 2;
             this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
@@ -168,7 +168,7 @@
             this.txtNumeroContacto.Location = new System.Drawing.Point(219, 272);
             this.txtNumeroContacto.Name = "txtNumeroContacto";
             this.txtNumeroContacto.Size = new System.Drawing.Size(377, 22);
-            this.txtNumeroContacto.TabIndex = 11;
+            this.txtNumeroContacto.TabIndex = 3;
             this.txtNumeroContacto.TextChanged += new System.EventHandler(this.txtNumeroContacto_TextChanged);
             this.txtNumeroContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroContacto_KeyPress);
             // 
@@ -178,7 +178,7 @@
             this.txtEdad.Location = new System.Drawing.Point(219, 313);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(377, 22);
-            this.txtEdad.TabIndex = 12;
+            this.txtEdad.TabIndex = 4;
             this.txtEdad.TextChanged += new System.EventHandler(this.txtEdad_TextChanged);
             this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
@@ -188,7 +188,7 @@
             this.txtEnfermedadAnterior.Location = new System.Drawing.Point(250, 474);
             this.txtEnfermedadAnterior.Name = "txtEnfermedadAnterior";
             this.txtEnfermedadAnterior.Size = new System.Drawing.Size(746, 22);
-            this.txtEnfermedadAnterior.TabIndex = 15;
+            this.txtEnfermedadAnterior.TabIndex = 12;
             this.txtEnfermedadAnterior.TextChanged += new System.EventHandler(this.txtEnfermedadAnterior_TextChanged);
             this.txtEnfermedadAnterior.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnfermedadAnterior_KeyPress);
             // 
@@ -198,7 +198,7 @@
             this.txtIdPaciente.Location = new System.Drawing.Point(219, 145);
             this.txtIdPaciente.Name = "txtIdPaciente";
             this.txtIdPaciente.Size = new System.Drawing.Size(377, 22);
-            this.txtIdPaciente.TabIndex = 16;
+            this.txtIdPaciente.TabIndex = 0;
             this.txtIdPaciente.TextChanged += new System.EventHandler(this.txtIdPaciente_TextChanged);
             this.txtIdPaciente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdPaciente_KeyPress);
             // 
@@ -210,7 +210,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(504, 543);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(92, 23);
-            this.btnGuardar.TabIndex = 17;
+            this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -223,7 +223,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(602, 542);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 18;
+            this.btnLimpiar.TabIndex = 14;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -236,7 +236,7 @@
             this.btnVolver.Location = new System.Drawing.Point(683, 543);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 19;
+            this.btnVolver.TabIndex = 15;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -245,13 +245,14 @@
             // 
             this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.ItemHeight = 16;
             this.cmbGenero.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
             this.cmbGenero.Location = new System.Drawing.Point(219, 360);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(377, 24);
-            this.cmbGenero.TabIndex = 20;
+            this.cmbGenero.TabIndex = 5;
             this.cmbGenero.SelectedIndexChanged += new System.EventHandler(this.cmbGenero_SelectedIndexChanged);
             // 
             // cmbTipoSangre
@@ -270,7 +271,7 @@
             this.cmbTipoSangre.Location = new System.Drawing.Point(794, 143);
             this.cmbTipoSangre.Name = "cmbTipoSangre";
             this.cmbTipoSangre.Size = new System.Drawing.Size(365, 24);
-            this.cmbTipoSangre.TabIndex = 21;
+            this.cmbTipoSangre.TabIndex = 6;
             this.cmbTipoSangre.SelectedIndexChanged += new System.EventHandler(this.cmbTipoSangre_SelectedIndexChanged);
             // 
             // label10
@@ -325,7 +326,7 @@
             this.txtMedicamentos.Location = new System.Drawing.Point(794, 272);
             this.txtMedicamentos.Name = "txtMedicamentos";
             this.txtMedicamentos.Size = new System.Drawing.Size(365, 22);
-            this.txtMedicamentos.TabIndex = 27;
+            this.txtMedicamentos.TabIndex = 9;
             this.txtMedicamentos.TextChanged += new System.EventHandler(this.txtMedicamentos_TextChanged);
             // 
             // txtDiagnostico
@@ -334,7 +335,7 @@
             this.txtDiagnostico.Location = new System.Drawing.Point(794, 231);
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Size = new System.Drawing.Size(365, 22);
-            this.txtDiagnostico.TabIndex = 28;
+            this.txtDiagnostico.TabIndex = 8;
             this.txtDiagnostico.TextChanged += new System.EventHandler(this.txtDiagnostico_TextChanged);
             // 
             // txtSintomas
@@ -343,7 +344,7 @@
             this.txtSintomas.Location = new System.Drawing.Point(794, 189);
             this.txtSintomas.Name = "txtSintomas";
             this.txtSintomas.Size = new System.Drawing.Size(365, 22);
-            this.txtSintomas.TabIndex = 29;
+            this.txtSintomas.TabIndex = 7;
             this.txtSintomas.TextChanged += new System.EventHandler(this.txtSintomas_TextChanged);
             // 
             // cmbRequerimientoDeSala
@@ -356,7 +357,7 @@
             this.cmbRequerimientoDeSala.Location = new System.Drawing.Point(794, 316);
             this.cmbRequerimientoDeSala.Name = "cmbRequerimientoDeSala";
             this.cmbRequerimientoDeSala.Size = new System.Drawing.Size(365, 24);
-            this.cmbRequerimientoDeSala.TabIndex = 30;
+            this.cmbRequerimientoDeSala.TabIndex = 10;
             this.cmbRequerimientoDeSala.SelectedIndexChanged += new System.EventHandler(this.cmbRequerimientoDeSala_SelectedIndexChanged);
             // 
             // cmbTipoDeSala
@@ -371,7 +372,7 @@
             this.cmbTipoDeSala.Location = new System.Drawing.Point(794, 365);
             this.cmbTipoDeSala.Name = "cmbTipoDeSala";
             this.cmbTipoDeSala.Size = new System.Drawing.Size(365, 24);
-            this.cmbTipoDeSala.TabIndex = 31;
+            this.cmbTipoDeSala.TabIndex = 11;
             this.cmbTipoDeSala.SelectedIndexChanged += new System.EventHandler(this.cmbTipoDeSala_SelectedIndexChanged);
             // 
             // RegistroForm

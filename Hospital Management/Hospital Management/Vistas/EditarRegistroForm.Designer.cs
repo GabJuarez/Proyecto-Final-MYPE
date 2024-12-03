@@ -205,7 +205,7 @@
             this.txtNombresYApellidos.Location = new System.Drawing.Point(337, 191);
             this.txtNombresYApellidos.Name = "txtNombresYApellidos";
             this.txtNombresYApellidos.Size = new System.Drawing.Size(214, 22);
-            this.txtNombresYApellidos.TabIndex = 15;
+            this.txtNombresYApellidos.TabIndex = 3;
             this.txtNombresYApellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombresYApellidos_KeyPress);
             // 
             // txtDireccion
@@ -214,7 +214,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(337, 242);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(214, 22);
-            this.txtDireccion.TabIndex = 16;
+            this.txtDireccion.TabIndex = 4;
             this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // txtNContacto
@@ -223,7 +223,7 @@
             this.txtNContacto.Location = new System.Drawing.Point(337, 296);
             this.txtNContacto.Name = "txtNContacto";
             this.txtNContacto.Size = new System.Drawing.Size(214, 22);
-            this.txtNContacto.TabIndex = 17;
+            this.txtNContacto.TabIndex = 5;
             this.txtNContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNContacto_KeyPress);
             // 
             // txtEdad
@@ -232,7 +232,7 @@
             this.txtEdad.Location = new System.Drawing.Point(337, 353);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(214, 22);
-            this.txtEdad.TabIndex = 18;
+            this.txtEdad.TabIndex = 6;
             this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtSintomas
@@ -241,7 +241,7 @@
             this.txtSintomas.Location = new System.Drawing.Point(809, 203);
             this.txtSintomas.Name = "txtSintomas";
             this.txtSintomas.Size = new System.Drawing.Size(186, 22);
-            this.txtSintomas.TabIndex = 19;
+            this.txtSintomas.TabIndex = 9;
             this.txtSintomas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSintomas_KeyPress);
             // 
             // txtDiagnostico
@@ -250,7 +250,7 @@
             this.txtDiagnostico.Location = new System.Drawing.Point(809, 261);
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Size = new System.Drawing.Size(186, 22);
-            this.txtDiagnostico.TabIndex = 20;
+            this.txtDiagnostico.TabIndex = 10;
             this.txtDiagnostico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiagnostico_KeyPress);
             // 
             // txtMedicamentos
@@ -259,7 +259,7 @@
             this.txtMedicamentos.Location = new System.Drawing.Point(809, 314);
             this.txtMedicamentos.Name = "txtMedicamentos";
             this.txtMedicamentos.Size = new System.Drawing.Size(186, 22);
-            this.txtMedicamentos.TabIndex = 21;
+            this.txtMedicamentos.TabIndex = 11;
             this.txtMedicamentos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedicamentos_KeyPress);
             // 
             // txtId
@@ -268,7 +268,7 @@
             this.txtId.Location = new System.Drawing.Point(569, 105);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
-            this.txtId.TabIndex = 22;
+            this.txtId.TabIndex = 0;
             this.txtId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtId_KeyPress);
             // 
             // txtEnfermedadAnteriorImportante
@@ -277,7 +277,7 @@
             this.txtEnfermedadAnteriorImportante.Location = new System.Drawing.Point(267, 539);
             this.txtEnfermedadAnteriorImportante.Name = "txtEnfermedadAnteriorImportante";
             this.txtEnfermedadAnteriorImportante.Size = new System.Drawing.Size(409, 22);
-            this.txtEnfermedadAnteriorImportante.TabIndex = 23;
+            this.txtEnfermedadAnteriorImportante.TabIndex = 14;
             this.txtEnfermedadAnteriorImportante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnfermedadAnteriorImportante_KeyPress);
             // 
             // cmbGenero
@@ -290,7 +290,7 @@
             this.cmbGenero.Location = new System.Drawing.Point(337, 402);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(214, 24);
-            this.cmbGenero.TabIndex = 24;
+            this.cmbGenero.TabIndex = 7;
             // 
             // cmbTipoDeSala
             // 
@@ -304,7 +304,7 @@
             this.cmbTipoDeSala.Location = new System.Drawing.Point(809, 425);
             this.cmbTipoDeSala.Name = "cmbTipoDeSala";
             this.cmbTipoDeSala.Size = new System.Drawing.Size(186, 24);
-            this.cmbTipoDeSala.TabIndex = 25;
+            this.cmbTipoDeSala.TabIndex = 13;
             // 
             // cmbRequerimientoDeSala
             // 
@@ -316,7 +316,7 @@
             this.cmbRequerimientoDeSala.Location = new System.Drawing.Point(809, 371);
             this.cmbRequerimientoDeSala.Name = "cmbRequerimientoDeSala";
             this.cmbRequerimientoDeSala.Size = new System.Drawing.Size(186, 24);
-            this.cmbRequerimientoDeSala.TabIndex = 26;
+            this.cmbRequerimientoDeSala.TabIndex = 12;
             // 
             // cmbTipoDeSangre
             // 
@@ -334,7 +334,7 @@
             this.cmbTipoDeSangre.Location = new System.Drawing.Point(337, 451);
             this.cmbTipoDeSangre.Name = "cmbTipoDeSangre";
             this.cmbTipoDeSangre.Size = new System.Drawing.Size(214, 24);
-            this.cmbTipoDeSangre.TabIndex = 27;
+            this.cmbTipoDeSangre.TabIndex = 8;
             // 
             // btnBuscar
             // 
@@ -343,7 +343,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(696, 105);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 28;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -356,7 +356,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(709, 538);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(92, 23);
-            this.btnGuardar.TabIndex = 29;
+            this.btnGuardar.TabIndex = 15;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -369,7 +369,7 @@
             this.BtnVolver.Location = new System.Drawing.Point(777, 104);
             this.BtnVolver.Name = "BtnVolver";
             this.BtnVolver.Size = new System.Drawing.Size(75, 23);
-            this.BtnVolver.TabIndex = 30;
+            this.BtnVolver.TabIndex = 2;
             this.BtnVolver.Text = "Volver";
             this.BtnVolver.UseVisualStyleBackColor = false;
             this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
@@ -382,7 +382,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(807, 538);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 23);
-            this.btnEliminar.TabIndex = 32;
+            this.btnEliminar.TabIndex = 16;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -395,7 +395,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(905, 538);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(90, 23);
-            this.btnLimpiar.TabIndex = 33;
+            this.btnLimpiar.TabIndex = 17;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);

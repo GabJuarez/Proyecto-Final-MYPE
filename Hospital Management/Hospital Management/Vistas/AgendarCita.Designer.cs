@@ -75,7 +75,7 @@
             this.cmbHora.Location = new System.Drawing.Point(378, 107);
             this.cmbHora.Name = "cmbHora";
             this.cmbHora.Size = new System.Drawing.Size(121, 24);
-            this.cmbHora.TabIndex = 1;
+            this.cmbHora.TabIndex = 0;
             this.cmbHora.SelectedIndexChanged += new System.EventHandler(this.cmbHora_SelectedIndexChanged);
             // 
             // cmbDoctor
@@ -85,7 +85,7 @@
             this.cmbDoctor.Location = new System.Drawing.Point(378, 158);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(121, 24);
-            this.cmbDoctor.TabIndex = 2;
+            this.cmbDoctor.TabIndex = 1;
             this.cmbDoctor.SelectedIndexChanged += new System.EventHandler(this.cmbDoctor_SelectedIndexChanged);
             // 
             // cmbConsultorio
@@ -100,7 +100,7 @@
             this.cmbConsultorio.Location = new System.Drawing.Point(378, 213);
             this.cmbConsultorio.Name = "cmbConsultorio";
             this.cmbConsultorio.Size = new System.Drawing.Size(121, 24);
-            this.cmbConsultorio.TabIndex = 3;
+            this.cmbConsultorio.TabIndex = 2;
             this.cmbConsultorio.SelectedIndexChanged += new System.EventHandler(this.cmbConsultorio_SelectedIndexChanged);
             // 
             // label2
@@ -155,7 +155,7 @@
             this.mtxtFecha.Mask = "00/00/0000";
             this.mtxtFecha.Name = "mtxtFecha";
             this.mtxtFecha.Size = new System.Drawing.Size(69, 22);
-            this.mtxtFecha.TabIndex = 11;
+            this.mtxtFecha.TabIndex = 3;
             this.mtxtFecha.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxtFecha_MaskInputRejected);
             this.mtxtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtFecha_KeyPress);
             // 
@@ -175,7 +175,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(521, 279);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 13;
+            this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -187,7 +187,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(601, 279);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 14;
+            this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -199,7 +199,7 @@
             this.btnVolver.Location = new System.Drawing.Point(996, 627);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 15;
+            this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -210,7 +210,7 @@
             this.rtxtMotivo.Location = new System.Drawing.Point(972, 107);
             this.rtxtMotivo.Name = "rtxtMotivo";
             this.rtxtMotivo.Size = new System.Drawing.Size(183, 68);
-            this.rtxtMotivo.TabIndex = 16;
+            this.rtxtMotivo.TabIndex = 5;
             this.rtxtMotivo.Text = "";
             this.rtxtMotivo.TextChanged += new System.EventHandler(this.rtxtMotivo_TextChanged);
             this.rtxtMotivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtxtMotivo_KeyPress);
@@ -221,7 +221,7 @@
             this.rtxtComentarios.Location = new System.Drawing.Point(972, 191);
             this.rtxtComentarios.Name = "rtxtComentarios";
             this.rtxtComentarios.Size = new System.Drawing.Size(183, 72);
-            this.rtxtComentarios.TabIndex = 17;
+            this.rtxtComentarios.TabIndex = 6;
             this.rtxtComentarios.Text = "";
             this.rtxtComentarios.TextChanged += new System.EventHandler(this.rtxtComentarios_TextChanged);
             this.rtxtComentarios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtxtComentarios_KeyPress);
@@ -233,7 +233,7 @@
             this.btnVer.Location = new System.Drawing.Point(601, 158);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(182, 79);
-            this.btnVer.TabIndex = 18;
+            this.btnVer.TabIndex = 4;
             this.btnVer.Text = "Ver Disponibilidad";
             this.btnVer.UseVisualStyleBackColor = false;
             this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
@@ -270,7 +270,7 @@
             this.btnEditar.Location = new System.Drawing.Point(996, 465);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(130, 23);
-            this.btnEditar.TabIndex = 21;
+            this.btnEditar.TabIndex = 9;
             this.btnEditar.Text = "Editar Cita";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -282,7 +282,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(996, 511);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(130, 23);
-            this.btnEliminar.TabIndex = 22;
+            this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar Cita";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -294,7 +294,7 @@
             this.btnGenerarReporte.Location = new System.Drawing.Point(996, 557);
             this.btnGenerarReporte.Name = "btnGenerarReporte";
             this.btnGenerarReporte.Size = new System.Drawing.Size(130, 23);
-            this.btnGenerarReporte.TabIndex = 23;
+            this.btnGenerarReporte.TabIndex = 11;
             this.btnGenerarReporte.Text = "Reporte";
             this.btnGenerarReporte.UseVisualStyleBackColor = false;
             this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click);
