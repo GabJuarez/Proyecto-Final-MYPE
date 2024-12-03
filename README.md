@@ -17,5 +17,9 @@ Hospital Management es un sistema diseñado para mi clase de programación (MYPE
 
 - **Lenguaje de programación:** C#
 - **Entorno de desarrollo:** Visual Studio community 2022
-- **Framework:** .NET 6.0 o superior
+- **Framework:** .NET 4.7.2
+
+## Instalación
+-**Extensión:** Microsoft Visual Studio Installer Projects 2022
+-Se realizó un instalador del proyecto el cual permite ejecutar directamente desde el escritorio y permitiendo usar todas las funcionalidades de este desde un alcance maás sencillo
 
