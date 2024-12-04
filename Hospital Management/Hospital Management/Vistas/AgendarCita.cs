@@ -41,6 +41,7 @@ namespace Hospital_Management.Vistas
             controles.Show();
         }
 
+        
         private void Validar()
         {
        
@@ -76,6 +77,7 @@ namespace Hospital_Management.Vistas
             Limpiar();
         }
 
+        //configurando las opciones de doctores disponibles segun la hora
         private void btnVer_Click(object sender, EventArgs e)
         {
             cmbConsultorio.Enabled = true;
@@ -195,10 +197,8 @@ namespace Hospital_Management.Vistas
 
         private void mtxtFecha_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-          
-           
-
-            Validar();
+                   
+           Validar();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -206,7 +206,10 @@ namespace Hospital_Management.Vistas
             if (string.IsNullOrWhiteSpace(mtxtFecha.Text) ||
                 cmbHora.SelectedItem == null ||
                 cmbDoctor.SelectedItem == null ||
-                cmbConsultorio.SelectedItem == null)
+                cmbConsultorio.SelectedItem == null ||
+                mtxtFecha.Text == null ||
+                rtxtMotivo == null ||
+                rtxtComentarios == null)
             {
                 MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -214,17 +217,15 @@ namespace Hospital_Management.Vistas
 
             try
             {
-                // Convertir la fecha ingresada
                 DateTime fechaIngresada = DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null);
 
-                // Validar que no sea una fecha pasada
+                //validacion para que no se pueda agregar una fecha pasada
                 if (fechaIngresada < DateTime.Now.Date)
                 {
                     MessageBox.Show("La fecha no puede ser anterior a la fecha actual.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Crear la cita
                 Cita nuevaCita = new Cita(
                     fecha: fechaIngresada,
                     hora: cmbHora.SelectedItem.ToString(),
@@ -234,10 +235,10 @@ namespace Hospital_Management.Vistas
                     comentarios: rtxtComentarios.Text
                 );
 
-                // Agregar la cita a la lista
+                // agregando la cita a la lista
                 ListaC.Citas.Add(nuevaCita);
 
-                // Agregar la cita al DataGridView
+                //agregando al dgv
                 dgvCitas.Rows.Add(
                     nuevaCita.Fecha.ToString("dd/MM/yyyy"),
                     nuevaCita.Hora,
@@ -247,7 +248,7 @@ namespace Hospital_Management.Vistas
                     nuevaCita.Comentarios
                 );
 
-                // Guardar las citas en el archivo
+                // guardar en el archivo
                 GuardarCitasEnArchivo();
 
                 MessageBox.Show("Cita guardada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -267,6 +268,7 @@ namespace Hospital_Management.Vistas
 
         public void ConfigurarDataGridView()
         {
+            //config las columnas del dgv
             dgvCitas.Columns.Clear();
             dgvCitas.Columns.Add("Fecha", "Fecha");
             dgvCitas.Columns.Add("Hora", "Hora");
@@ -278,6 +280,7 @@ namespace Hospital_Management.Vistas
 
         public void ActualizarDataGridView()
         {
+            //se limpia el dgv y se vuelve a cargar la lista para actualizar
             dgvCitas.Rows.Clear();
 
             foreach (var cita in ListaC.Citas)
@@ -395,20 +398,20 @@ namespace Hospital_Management.Vistas
                 return;
             }
 
-            // Confirmar la eliminación
+            // confirmacion
             DialogResult confirmacion = MessageBox.Show("¿Está seguro de que desea eliminar esta cita?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirmacion == DialogResult.Yes)
             {
-                // Obtener el índice de la fila seleccionada
+                // queremos el indice de la fila que está seleccionada
                 int selectedIndex = dgvCitas.SelectedRows[0].Index;
 
-                // Eliminar la cita de la lista
+                // eliminamos de la lista la cita
                 ListaC.Citas.RemoveAt(selectedIndex);
 
-                // Eliminar la fila del DataGridView
+                // tambien eliminamos la fila en el dgv
                 dgvCitas.Rows.RemoveAt(selectedIndex);
 
-                // Guardar los cambios en el archivo binario
+                // por ultimo los cambios se guardan
                 GuardarCitasEnArchivo();
 
                 MessageBox.Show("Cita eliminada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -436,29 +439,34 @@ namespace Hospital_Management.Vistas
         { 
             if (dgvCitas.SelectedRows.Count > 0)
             {
-                // Obtiene la primera fila seleccionada
                 DataGridViewRow row = dgvCitas.SelectedRows[0];
 
-                // Asigna los valores de las celdas a los controles correspondientes
-                mtxtFecha.Text = row.Cells["Fecha"].Value.ToString();         // Fecha
-                cmbHora.SelectedItem = row.Cells["Hora"].Value.ToString();   // Hora
-                cmbDoctor.SelectedItem = row.Cells["Doctor"].Value.ToString(); // Doctor
-                cmbConsultorio.SelectedItem = row.Cells["Consultorio"].Value.ToString(); // Consultorio
-                rtxtMotivo.Text = row.Cells["Motivo"].Value.ToString();      // Motivo
-                rtxtComentarios.Text = row.Cells["Comentarios"].Value.ToString(); // Comentarios
+                // asignacion de los valores de la fila seleccionada del dgv a los diversos controles del form
+                mtxtFecha.Text = row.Cells["Fecha"].Value.ToString();         
+                cmbHora.SelectedItem = row.Cells["Hora"].Value.ToString();   
+                cmbDoctor.SelectedItem = row.Cells["Doctor"].Value.ToString(); 
+                cmbConsultorio.SelectedItem = row.Cells["Consultorio"].Value.ToString(); 
+                rtxtMotivo.Text = row.Cells["Motivo"].Value.ToString();      
+                rtxtComentarios.Text = row.Cells["Comentarios"].Value.ToString(); 
 
-                // Ajusta el estado de los botones según el contexto
-                btnGuardar.Enabled = false; // Deshabilita el botón de guardar
-                btnEditar.Enabled = true;  // Habilita el botón de editar
+                
+                btnGuardar.Enabled = false; 
+                btnEditar.Enabled = true;  
             }
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
         {
+            // se asigna como fuente de datos la lista de las citas
             ReportDataSource dataSource = new ReportDataSource("dsCitas", ListaC.Citas);
+
             ReporteCitas reporte = new ReporteCitas();
+            
+            // limpiar el rpt viewer y se le asigna la fuente de datos
             reporte.reportViewer1.LocalReport.DataSources.Clear();
             reporte.reportViewer1.LocalReport.DataSources.Add(dataSource);
+
+            //ruta .rdlc
             reporte.reportViewer1.LocalReport.ReportEmbeddedResource = "Hospital_Management.Reportes.rptCitas.rdlc";
             reporte.reportViewer1.RefreshReport();
             reporte.ShowDialog();

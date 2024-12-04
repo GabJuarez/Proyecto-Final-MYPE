@@ -28,10 +28,15 @@ namespace Hospital_Management.Vistas
             this.Hide();
             Controles controles = new Controles();
             controles.Show();
+            //este botón es para volver al menú
         }
 
         private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e) { }
 
+        #region validaciones
+
+        /*Los siguientes métodos son validaciones para los diferentes campos del formulario,
+         algunos validan tanto el formato como el tipo de dato ingresado*/
         private void txtNombresYApellidos_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)Keys.Back)
@@ -59,7 +64,6 @@ namespace Hospital_Management.Vistas
             }
         }
 
-
         private void txtNumeroContacto_Leave(object sender, EventArgs e)
         {
             if (txtNumeroContacto.Text.Length != 8)
@@ -69,7 +73,6 @@ namespace Hospital_Management.Vistas
                 txtNumeroContacto.Focus();
             }
         }
-
 
         private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -138,12 +141,19 @@ namespace Hospital_Management.Vistas
 
         private void Registro_Load(object sender, EventArgs e)
         {
+            /*Se desactiva el btn de guardar hasta que se llenen los campos obligatorios y se desactiva
+            el cmb tipo de sala hasta que se haya seleccionado una opción en el cmb de requerimiento de
+           sala del paciente*/
+
             btnGuardar.Enabled = false;
             cmbTipoDeSala.Enabled = false;
+           
         }
-
+        #region Validaciones
         private void Validar()
         {
+            //Validaciones de los campos obligatorios
+
             if (!string.IsNullOrEmpty(txtNombresYApellidos.Text) &&
                 !string.IsNullOrEmpty(txtDireccion.Text) &&
                 !string.IsNullOrEmpty(txtNumeroContacto.Text) &&
@@ -252,9 +262,12 @@ namespace Hospital_Management.Vistas
             }
             Validar();
         }
+        #endregion
 
         private void Limpiar()
         {
+            //Limpia los txtboxes y demás controles, se hace como método aparte para solo mandarlo a llamar cuando se necesite
+
             txtNombresYApellidos.Clear();
             txtDireccion.Clear();
             txtNumeroContacto.Clear();
@@ -278,26 +291,28 @@ namespace Hospital_Management.Vistas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
             Guardar();
             Limpiar();
         }
 
+        #region Guardar
         private void Guardar()
         {
-            FileStream fs = null;
-            BinaryWriter writer = null;
+            FileStream fs = null; // esto es para manejar el archivo donde se guardarán los registros
+            BinaryWriter writer = null; // sirve para escribir los datos en binario
 
             try
             {
                 string id = txtIdPaciente.Text;
 
+                // verificamos si el ID ya existe para evitar duplicados
                 if (EsIdRepetido(id))
                 {
                     MessageBox.Show($"El ID '{id}' ya existe. Por favor, ingresa un ID único.", "ID Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    return; // salimos del método si el ID ya está registrado
                 }
 
+                // recolectamos toda la información de los campos del formulario
                 string nombre = txtNombresYApellidos.Text;
                 string direccion = txtDireccion.Text;
                 string contacto = txtNumeroContacto.Text;
@@ -311,13 +326,15 @@ namespace Hospital_Management.Vistas
                 string requerimientoSala = cmbRequerimientoDeSala.SelectedItem.ToString();
                 string tipoSala = cmbTipoDeSala.SelectedItem.ToString();
 
+                // creamos un nuevo objeto con los datos
                 Registro nuevoRegistro = new Registro(id, nombre, direccion, contacto, edad, genero, tipoSangre,
                     enfermedadAnterior, sintomas, diagnostico, medicamentos, requerimientoSala, tipoSala);
 
-                // guardar el registro en el archivo
+                // abrimos el archivo en modo "Append" para añadir al final
                 fs = new FileStream("registros.bin", FileMode.Append);
                 writer = new BinaryWriter(fs);
 
+                // escribimos los datos del objeto en el archivo
                 writer.Write(nuevoRegistro.Id);
                 writer.Write(nuevoRegistro.Nombre);
                 writer.Write(nuevoRegistro.Direccion);
@@ -332,8 +349,8 @@ namespace Hospital_Management.Vistas
                 writer.Write(nuevoRegistro.RequerimientoDeSala);
                 writer.Write(nuevoRegistro.TipoDeSala);
 
+                // añadimos el registro a la lista en memoria
                 ListaR.Registros.Add(nuevoRegistro);
-
                 MessageBox.Show("Registro guardado correctamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -342,6 +359,7 @@ namespace Hospital_Management.Vistas
             }
             finally
             {
+                // cerramos el escritor y el archivo aunque ocurra un error
                 if (writer != null) writer.Close();
                 if (fs != null) fs.Close();
             }
@@ -349,17 +367,19 @@ namespace Hospital_Management.Vistas
 
         private bool EsIdRepetido(string id)
         {
-            FileStream fs = null;
-            BinaryReader reader = null;
+            FileStream fs = null; // para leer el archivo
+            BinaryReader reader = null; // para leer datos en binario
 
             try
             {
+                // si el archivo no existe, quiere decir que no hay Ids repetidos, ya que no hay datos guardados
                 if (!File.Exists("registros.bin"))
                     return false;
 
-                fs = new FileStream("registros.bin", FileMode.Open);
+                fs = new FileStream("registros.bin", FileMode.Open); // abrimos el archivo en modo lectura
                 reader = new BinaryReader(fs);
 
+                // leemos el archivo completo para verificar si ya existe el ID
                 while (fs.Position < fs.Length)
                 {
                     string idExistente = reader.ReadString();
@@ -369,8 +389,8 @@ namespace Hospital_Management.Vistas
                         reader.ReadString();
                     }
 
-                    if (idExistente == id)
-                        return true;
+                    if (idExistente == id) // comparamos con el ID ingresado
+                        return true; // si lo encontramos, devolvemos true
                 }
             }
             catch (Exception ex)
@@ -379,11 +399,15 @@ namespace Hospital_Management.Vistas
             }
             finally
             {
+                // cerramos el lector y el archivo para liberar recursos
                 if (reader != null) reader.Close();
                 if (fs != null) fs.Close();
             }
-            return false; 
+            return false; // si el id no se encuentra retornamos falso
+                         
         }
+        #endregion
 
     }
 }
+#endregion

@@ -41,6 +41,7 @@ namespace Hospital_Management.Vistas
 
             try
             {
+                // verificacion de la existencia del archivo
                 if (!File.Exists("registros.bin"))
                 {
                     dgvHistorial.DataSource = null;
@@ -48,11 +49,14 @@ namespace Hospital_Management.Vistas
                     return;
                 }
 
+                //se abre el archivo en modo lectura
                 fs = new FileStream("registros.bin", FileMode.Open);
                 reader = new BinaryReader(fs);
 
+                //se limpia la lista antes de volverla a llenar
                 ListaR.Registros.Clear();
 
+                // se lee todo el archivo, cada campo
                 while (fs.Position < fs.Length)
                 {
                     string id = reader.ReadString();
@@ -69,25 +73,28 @@ namespace Hospital_Management.Vistas
                     string requerimientodesala = reader.ReadString();
                     string tipodesala = reader.ReadString();
 
-
+                    // se agrega nuevamente la info a la lista
                     ListaR.Registros.Add(new Registro(id, nombre, direccion, contacto, edad, genero, tipoSangre, enfermedadAnterior, sintomas, diagnostico, medicamentos, requerimientodesala, tipodesala));
                 }
 
-
+                // se actualiza el dgv
                 dgvHistorial.DataSource = null;
                 dgvHistorial.DataSource = ListaR.Registros;
             }
             catch (Exception ex)
             {
-
+                // Si ocurre un error, muestra un mensaje
                 MessageBox.Show($"Error al actualizar el DataGridView: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
+                // Cierra el archivo y el lector para liberar los recursos
                 reader?.Close();
                 fs?.Close();
             }
         }
+
+        
 
 
 
@@ -99,24 +106,30 @@ namespace Hospital_Management.Vistas
         {
             this.Hide();
 
+            // verifica si hay fila seleccionada
             if (dgvHistorial.SelectedRows.Count > 0)
-            {
+            {                
                 int rowIndex = dgvHistorial.SelectedRows[0].Index;
 
+                //se obtiene el registro asociado al dgv row seleccionada
                 Registro registroSeleccionado = (Registro)dgvHistorial.Rows[rowIndex].DataBoundItem;
 
                 EditarRegistroForm frmEditar = new EditarRegistroForm(registroSeleccionado);
 
+                //muestra el form de edicion
                 if (frmEditar.ShowDialog() == DialogResult.OK)
-                {
+                {         
+                    //el dgv se actualiza
                     ActualizarDataGridView();
                 }
             }
             else
             {
+                // Si no se selecciona ninguna fila, muestra un mensaje al usuario
                 MessageBox.Show("Por favor, selecciona una fila para editar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
@@ -125,36 +138,31 @@ namespace Hospital_Management.Vistas
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
         {
+            // se asigna como fuente de datos la lista de los reportes
             ReportDataSource dataSource = new ReportDataSource("dsRegistros", ListaR.Registros);
             ReporteRegistros reporte = new ReporteRegistros();
+
+            // limpiar el rpt viewer y se le asigna la fuente de datos
             reporte.ReportViewer2.LocalReport.DataSources.Clear();
             reporte.ReportViewer2.LocalReport.DataSources.Add(dataSource);
+
+            //ruta .rdlc
             reporte.ReportViewer2.LocalReport.ReportEmbeddedResource = "Hospital_Management.Reportes.rptRegistros.rdlc";
             reporte.ReportViewer2.RefreshReport();
             reporte.ShowDialog();
         }
 
-        private void dgvHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        
         private void btnExcel_Click(object sender, EventArgs e)
         {
-
             ExportarAExcel();
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
         
         #region metodoExcel
         private DataTable CrearDataTableConEncabezados()
         {
+            //se crea el dt, creando las columnas y cargando las filas a partir de la lista de registros
+
             DataTable dt = new DataTable();
             dt.Columns.Add("Id", typeof(int));
             dt.Columns.Add("Nombre", typeof(string));
@@ -195,7 +203,7 @@ namespace Hospital_Management.Vistas
         {
             try
             {
-                // Configurar el contexto de la licencia para EPPlus
+                // se configura el contexto de la licencia para epplus
                 ExcelPackage.LicenseContext = LicenseContext.Commercial;
 
                 DataTable dt = CrearDataTableConEncabezados();
@@ -216,10 +224,10 @@ namespace Hospital_Management.Vistas
 
                         if (saveFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            // obtener la ruta seleccionada por el usuario
+                            // obtener la ruta seleccionada para guardar el archivo
                             string filePath = saveFileDialog.FileName;
 
-                            // guardar el archivo Excel en la ubicación seleccionada
+                            // guardar
                             File.WriteAllBytes(filePath, package.GetAsByteArray());
 
                            MessageBox.Show("El archivo Excel ha sido generado exitosamente en: " + filePath);
@@ -233,6 +241,8 @@ namespace Hospital_Management.Vistas
             }
             #endregion
         }
+        private void dgvHistorial_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+        private void button1_Click(object sender, EventArgs e) { }
     }
 }
             

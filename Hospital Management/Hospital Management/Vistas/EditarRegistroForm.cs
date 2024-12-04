@@ -22,10 +22,8 @@ namespace Hospital_Management.Vistas
             registroActual = registro;
         }
 
-        private void EditarRegistroForm_Load(object sender, EventArgs e)
-        {
-        }
-
+        private void EditarRegistroForm_Load(object sender, EventArgs e) { }
+        private void label1_Click(object sender, EventArgs e) { }
         private void BtnVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -33,7 +31,7 @@ namespace Hospital_Management.Vistas
             historial.Show();
         }
 
-        // metodo para cargar los datos del registro en el formulario
+        // método para cargar los datos del registro en el formulario
         private void CargarDatosEnFormulario()
         {
             txtId.Text = registroActual.Id;
@@ -50,23 +48,27 @@ namespace Hospital_Management.Vistas
             cmbRequerimientoDeSala.SelectedItem = registroActual.RequerimientoDeSala;
             cmbTipoDeSala.SelectedItem = registroActual.TipoDeSala;
         }
+        #region Búsqueda
         private Registro BuscarRegistroPorId(string id)
         {
-            FileStream fs = null;
-            BinaryReader reader = null;
+            FileStream fs = null; // manejamos el archivo de registros
+            BinaryReader reader = null; // para leer los datos en binario
 
             try
             {
+                // verificamos si el archivo existe, si no, devolvemos null
                 if (!File.Exists("registros.bin"))
                 {
                     return null;
                 }
 
-                fs = new FileStream("registros.bin", FileMode.Open);
+                fs = new FileStream("registros.bin", FileMode.Open); // abrimos el archivo en modo lectura
                 reader = new BinaryReader(fs);
 
+                // leemos todos los registros hasta encontrar uno con el ID buscado
                 while (fs.Position < fs.Length)
                 {
+                    // leemos cada campo del registro en orden
                     string idExistente = reader.ReadString();
                     string nombre = reader.ReadString();
                     string direccion = reader.ReadString();
@@ -81,6 +83,7 @@ namespace Hospital_Management.Vistas
                     string requerimientoSala = reader.ReadString();
                     string tipoSala = reader.ReadString();
 
+                    // si el ID leído coincide con el buscado, construimos y devolvemos el registro
                     if (idExistente == id)
                     {
                         return new Registro(idExistente, nombre, direccion, contacto, edad, genero, tipoSangre,
@@ -94,11 +97,12 @@ namespace Hospital_Management.Vistas
             }
             finally
             {
+                // cerramos los recursos, sin importar el resultado
                 if (reader != null) reader.Close();
                 if (fs != null) fs.Close();
             }
 
-            return null;
+            return null; // si no encontramos el registro nos regresa null
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -111,8 +115,10 @@ namespace Hospital_Management.Vistas
                 return;
             }
 
+            // buscamos el registro por id, pasandolo como parametro
             Registro registro = BuscarRegistroPorId(id);
 
+            // si encontramos el registro, llenamos los campos del formulario
             if (registro != null)
             {
                 txtNombresYApellidos.Text = registro.Nombre;
@@ -132,26 +138,28 @@ namespace Hospital_Management.Vistas
             }
             else
             {
+                // mostramos un mensaje si no encontramos ningún registro con ese 
                 MessageBox.Show($"No se encontró ningún registro con el ID '{id}'.", "Registro no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void label1_Click(object sender, EventArgs e) { }
+        #endregion
 
+        #region Guardar
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
-                // Buscar el registro en la lista
+                // Buscar el registro en la lista por ID
                 var registro = ListaR.Registros.FirstOrDefault(r => r.Id == registroActual.Id);
                 if (registro != null)
                 {
-                    // Actualizar los datos del registro
+                    // Si el registro existe, actualizamos sus datos con la información del formulario
                     registro.Nombre = txtNombresYApellidos.Text;
                     registro.Direccion = txtDireccion.Text;
                     registro.Ncontacto = txtNContacto.Text;
                     registro.Edad = txtEdad.Text;
-                    registro.Genero = cmbGenero.SelectedItem?.ToString();
+                    registro.Genero = cmbGenero.SelectedItem.ToString(); 
                     registro.Tiposangre = cmbTipoDeSangre.SelectedItem?.ToString();
                     registro.Enfermedadanterior = txtEnfermedadAnteriorImportante.Text;
                     registro.Sintomas = txtSintomas.Text;
@@ -162,13 +170,16 @@ namespace Hospital_Management.Vistas
                 }
                 else
                 {
+                    // Si no se encuentra el registro, mostramos un mensaje de error
                     MessageBox.Show("No se encontró el registro para editar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    return; 
                 }
 
+                // Guardar los cambios en el archivo binario
                 GuardarRegistrosEnArchivo();
 
                 MessageBox.Show("Los cambios se han guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 Limpiar();
             }
             catch (Exception ex)
@@ -181,11 +192,14 @@ namespace Hospital_Management.Vistas
         {
             try
             {
+                // Abrimos un archivo nuevo (modo Create sobrescribe el contenido existente)
                 using (var fs = new FileStream("registros.bin", FileMode.Create))
-                using (var writer = new BinaryWriter(fs))
+                using (var writer = new BinaryWriter(fs)) // Usamos BinaryWriter para escribir datos binarios
                 {
+                    // Iteramos por cada registro en la lista
                     foreach (var reg in ListaR.Registros)
                     {
+                        // Guardamos cada campo del registro en el archivo
                         writer.Write(reg.Id);
                         writer.Write(reg.Nombre);
                         writer.Write(reg.Direccion);
@@ -208,6 +222,7 @@ namespace Hospital_Management.Vistas
             }
         }
 
+        #endregion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -243,7 +258,7 @@ namespace Hospital_Management.Vistas
             }
         }
 
-
+        #region Validaciones
         private void txtId_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
@@ -375,7 +390,9 @@ namespace Hospital_Management.Vistas
                 }
             }
         }
+        #endregion
 
+        #region Limpiar
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -399,8 +416,7 @@ namespace Hospital_Management.Vistas
             txtNombresYApellidos.Focus();
         }
 
-       
+        #endregion
+  
     }
 }
-
-

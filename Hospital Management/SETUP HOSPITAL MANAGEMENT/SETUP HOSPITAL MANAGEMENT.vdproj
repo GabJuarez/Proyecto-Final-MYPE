@@ -1363,7 +1363,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SETUP HOSPITAL MANAGEMENT"
         "ProductCode" = "8:{43877E5E-7627-4401-B8FC-E5D0F5ED90C9}"
-        "PackageCode" = "8:{7BBF4CA1-DE97-4E22-883D-F1B6688987AE}"
+        "PackageCode" = "8:{A2BFA038-7C1C-419C-A6DC-1BF300695258}"
         "UpgradeCode" = "8:{5176743B-D084-4C8B-A1B0-CAFD8B22F130}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

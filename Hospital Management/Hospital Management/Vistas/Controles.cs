@@ -20,6 +20,7 @@ namespace Hospital_Management.Vistas
             InitializeComponent();
         }
 
+        private void Controles_Load(object sender, EventArgs e) { }      
         private void label2_Click(object sender, EventArgs e){ }
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -30,14 +31,15 @@ namespace Hospital_Management.Vistas
         private void label4_Click(object sender, EventArgs e) { }        
         private void label3_Click(object sender, EventArgs e) { }
 
+        /*Este formulario se puede ver como menu, en esta pantalla solo se van encontrar botones que nos redirigen 
+         a los formularios de los registros, en este archivo solo se crean instancias de los diferentes formularios
+        en cada boton*/
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
             this.Hide();
             RegistroForm registro = new RegistroForm();
             registro.Show();
         }
-
-        
 
         private void btnHistorial_Click(object sender, EventArgs e)
         {
@@ -59,5 +61,7 @@ namespace Hospital_Management.Vistas
             Login login = new Login();
             login.Show();
         }
+
+        
     }
 }

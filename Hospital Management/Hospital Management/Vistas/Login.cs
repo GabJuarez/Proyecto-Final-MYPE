@@ -20,6 +20,8 @@ namespace Hospital_Management
         }
         private void Login_Load(object sender, EventArgs e) { }
 
+        /*el boton acceder nos redirecciona a los diferentes formularios (Doctores, Pacientes) en el de doctores se pueden realizar registros y 
+         en el de paciente agendar citas, nos redirecciona dependiendo de los datos ingresados y depues de hacer click en el boton "Acceder"*/
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             string user;
