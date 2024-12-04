@@ -151,7 +151,7 @@ namespace Hospital_Management.Vistas
         {
 
         }
-
+        
         #region metodoExcel
         private DataTable CrearDataTableConEncabezados()
         {
@@ -231,11 +231,11 @@ namespace Hospital_Management.Vistas
             { 
                 MessageBox.Show($"Error al generar el informe: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            #endregion
         }
     }
 }
-            #endregion
+            
         
 
 

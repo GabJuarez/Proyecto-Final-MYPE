@@ -452,6 +452,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -1355,7 +1363,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SETUP HOSPITAL MANAGEMENT"
         "ProductCode" = "8:{43877E5E-7627-4401-B8FC-E5D0F5ED90C9}"
-        "PackageCode" = "8:{CD662A5D-83A1-4B01-818A-68575493900F}"
+        "PackageCode" = "8:{7BBF4CA1-DE97-4E22-883D-F1B6688987AE}"
         "UpgradeCode" = "8:{5176743B-D084-4C8B-A1B0-CAFD8B22F130}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

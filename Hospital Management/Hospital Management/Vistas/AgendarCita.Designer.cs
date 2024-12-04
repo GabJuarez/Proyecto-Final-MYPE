@@ -196,7 +196,7 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.IndianRed;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Location = new System.Drawing.Point(996, 627);
+            this.btnVolver.Location = new System.Drawing.Point(1012, 612);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 12;
@@ -257,7 +257,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(468, 356);
+            this.label8.Location = new System.Drawing.Point(490, 359);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 32);
             this.label8.TabIndex = 20;
@@ -267,9 +267,9 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditar.Location = new System.Drawing.Point(996, 465);
+            this.btnEditar.Location = new System.Drawing.Point(987, 429);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(130, 23);
+            this.btnEditar.Size = new System.Drawing.Size(130, 36);
             this.btnEditar.TabIndex = 9;
             this.btnEditar.Text = "Editar Cita";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -279,9 +279,9 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminar.Location = new System.Drawing.Point(996, 511);
+            this.btnEliminar.Location = new System.Drawing.Point(987, 487);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(130, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(130, 34);
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar Cita";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -289,11 +289,12 @@
             // 
             // btnGenerarReporte
             // 
-            this.btnGenerarReporte.BackColor = System.Drawing.Color.Violet;
+            this.btnGenerarReporte.BackColor = System.Drawing.Color.BlueViolet;
             this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerarReporte.Location = new System.Drawing.Point(996, 557);
+            this.btnGenerarReporte.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGenerarReporte.Location = new System.Drawing.Point(987, 545);
             this.btnGenerarReporte.Name = "btnGenerarReporte";
-            this.btnGenerarReporte.Size = new System.Drawing.Size(130, 23);
+            this.btnGenerarReporte.Size = new System.Drawing.Size(130, 35);
             this.btnGenerarReporte.TabIndex = 11;
             this.btnGenerarReporte.Text = "Reporte";
             this.btnGenerarReporte.UseVisualStyleBackColor = false;

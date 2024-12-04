@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\editarregistroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\editarregistroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\estadisticascitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\estadisticascitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\estadisticascitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\estadisticascitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\agendarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\agendarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\agendarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\agendarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\editarregistroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\editarregistroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|c:\\users\\juare\\onedrive\\escritorio\\proyecto final\\hospital management\\hospital management\\vistas\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2089996A-05E8-4C43-B8A0-312C54C2EA16}|Hospital Management.csproj|solutionrelative:vistas\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,77 +46,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Login.cs",
-              "RelativeDocumentMoniker": "Vistas\\Login.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Login.cs",
-              "RelativeToolTip": "Vistas\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EstadisticasCitas.cs",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EstadisticasCitas.cs",
+              "RelativeDocumentMoniker": "Vistas\\EstadisticasCitas.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EstadisticasCitas.cs",
+              "RelativeToolTip": "Vistas\\EstadisticasCitas.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAArwBwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:35:00.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Login.cs",
-              "RelativeDocumentMoniker": "Vistas\\Login.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Login.cs [Design]",
-              "RelativeToolTip": "Vistas\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:34:59.46Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegistroForm.cs",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs",
-              "RelativeDocumentMoniker": "Vistas\\RegistroForm.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs",
-              "RelativeToolTip": "Vistas\\RegistroForm.cs",
-              "ViewState": "AgIAAOEAAAAAAAAAAAASwO8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:09:43.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditarRegistroForm.cs",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EditarRegistroForm.cs",
-              "RelativeDocumentMoniker": "Vistas\\EditarRegistroForm.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EditarRegistroForm.cs*",
-              "RelativeToolTip": "Vistas\\EditarRegistroForm.cs*",
-              "ViewState": "AgIAAFEBAAAAAAAAAAAYwHgBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:09:35.221Z",
+              "WhenOpened": "2024-12-04T04:46:30.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditarRegistroForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EditarRegistroForm.cs",
-              "RelativeDocumentMoniker": "Vistas\\EditarRegistroForm.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EditarRegistroForm.cs [Design]*",
-              "RelativeToolTip": "Vistas\\EditarRegistroForm.cs [Design]*",
+              "Title": "EstadisticasCitas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EstadisticasCitas.cs",
+              "RelativeDocumentMoniker": "Vistas\\EstadisticasCitas.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\EstadisticasCitas.cs [Design]",
+              "RelativeToolTip": "Vistas\\EstadisticasCitas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:09:30.98Z",
+              "WhenOpened": "2024-12-04T04:46:27.737Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegistroForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs",
-              "RelativeDocumentMoniker": "Vistas\\RegistroForm.cs",
-              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\RegistroForm.cs [Design]",
-              "RelativeToolTip": "Vistas\\RegistroForm.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "Historial.cs",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Historial.cs",
+              "RelativeDocumentMoniker": "Vistas\\Historial.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Historial.cs",
+              "RelativeToolTip": "Vistas\\Historial.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAvwL4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:09:26.478Z",
+              "WhenOpened": "2024-12-04T03:57:32.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Historial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Historial.cs",
+              "RelativeDocumentMoniker": "Vistas\\Historial.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\Historial.cs [Design]",
+              "RelativeToolTip": "Vistas\\Historial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:57:31.144Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgendarCita.cs",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\AgendarCita.cs",
+              "RelativeDocumentMoniker": "Vistas\\AgendarCita.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\AgendarCita.cs",
+              "RelativeToolTip": "Vistas\\AgendarCita.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAjwAsBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T20:54:02.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgendarCita.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\AgendarCita.cs",
+              "RelativeDocumentMoniker": "Vistas\\AgendarCita.cs",
+              "ToolTip": "C:\\Users\\juare\\OneDrive\\Escritorio\\Proyecto FInal\\Hospital Management\\Hospital Management\\Vistas\\AgendarCita.cs [Design]",
+              "RelativeToolTip": "Vistas\\AgendarCita.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T20:53:28.462Z",
               "EditorCaption": " [Design]"
             }
           ]

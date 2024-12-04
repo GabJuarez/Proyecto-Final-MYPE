@@ -195,6 +195,9 @@ namespace Hospital_Management.Vistas
 
         private void mtxtFecha_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
+          
+           
+
             Validar();
         }
 
@@ -211,8 +214,19 @@ namespace Hospital_Management.Vistas
 
             try
             {
+                // Convertir la fecha ingresada
+                DateTime fechaIngresada = DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null);
+
+                // Validar que no sea una fecha pasada
+                if (fechaIngresada < DateTime.Now.Date)
+                {
+                    MessageBox.Show("La fecha no puede ser anterior a la fecha actual.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Crear la cita
                 Cita nuevaCita = new Cita(
-                    fecha: DateTime.ParseExact(mtxtFecha.Text, "dd/MM/yyyy", null),
+                    fecha: fechaIngresada,
                     hora: cmbHora.SelectedItem.ToString(),
                     doctor: cmbDoctor.SelectedItem.ToString(),
                     consultorio: cmbConsultorio.SelectedItem.ToString(),
@@ -220,8 +234,10 @@ namespace Hospital_Management.Vistas
                     comentarios: rtxtComentarios.Text
                 );
 
+                // Agregar la cita a la lista
                 ListaC.Citas.Add(nuevaCita);
 
+                // Agregar la cita al DataGridView
                 dgvCitas.Rows.Add(
                     nuevaCita.Fecha.ToString("dd/MM/yyyy"),
                     nuevaCita.Hora,
@@ -231,6 +247,7 @@ namespace Hospital_Management.Vistas
                     nuevaCita.Comentarios
                 );
 
+                // Guardar las citas en el archivo
                 GuardarCitasEnArchivo();
 
                 MessageBox.Show("Cita guardada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -245,6 +262,7 @@ namespace Hospital_Management.Vistas
                 MessageBox.Show($"Ocurrió un error al guardar la cita: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         public void ConfigurarDataGridView()
@@ -274,8 +292,6 @@ namespace Hospital_Management.Vistas
                 );
             }
         }
-
-
 
 
         private void CargarCitasDesdeArchivo()
@@ -308,8 +324,6 @@ namespace Hospital_Management.Vistas
                 MessageBox.Show("Ocurrió un error al cargar las citas. Detalles: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
 
 
 
@@ -389,7 +403,7 @@ namespace Hospital_Management.Vistas
                 int selectedIndex = dgvCitas.SelectedRows[0].Index;
 
                 // Eliminar la cita de la lista
-                citas.RemoveAt(selectedIndex);
+                ListaC.Citas.RemoveAt(selectedIndex);
 
                 // Eliminar la fila del DataGridView
                 dgvCitas.Rows.RemoveAt(selectedIndex);
@@ -449,6 +463,8 @@ namespace Hospital_Management.Vistas
             reporte.reportViewer1.RefreshReport();
             reporte.ShowDialog();
         }
+
+
     }
 }
 

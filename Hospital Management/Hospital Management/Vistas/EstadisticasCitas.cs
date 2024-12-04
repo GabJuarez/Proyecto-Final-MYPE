@@ -25,6 +25,8 @@ namespace Hospital_Management.Vistas
         private void CargarDatosCitas()
         {
             AgendarCita agendarCita = new AgendarCita();
+            agendarCita.Show();
+            agendarCita.Hide();
             agendarCita.ConfigurarDataGridView();
             agendarCita.ActualizarDataGridView();
         }

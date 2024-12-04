@@ -110,10 +110,11 @@
             // 
             // btnGenerarReporte
             // 
-            this.btnGenerarReporte.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnGenerarReporte.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnGenerarReporte.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGenerarReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarReporte.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnGenerarReporte.Location = new System.Drawing.Point(564, 474);
             this.btnGenerarReporte.Name = "btnGenerarReporte";
             this.btnGenerarReporte.Size = new System.Drawing.Size(95, 34);
@@ -128,6 +129,7 @@
             this.btnExcel.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnExcel.Location = new System.Drawing.Point(675, 474);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(133, 34);
